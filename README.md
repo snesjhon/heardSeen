@@ -29,9 +29,10 @@ Fill in `.env`:
 - **Supabase**: create a project at [supabase.com](https://supabase.com), copy the URL/anon
   key/service-role key from Settings > API.
 - **Apple Music**: requires an Apple Developer Program membership (~$99/yr). Create a MusicKit key
-  under Certificates, Identifiers & Profiles > Keys, and set `APPLE_TEAM_ID`/`APPLE_KEY_ID`/
-  `APPLE_PRIVATE_KEY`. Only needed to (re)generate album seed data — the app itself never calls the
-  Catalog API at runtime.
+  under Certificates, Identifiers & Profiles > Keys, download the `.p8` file somewhere outside
+  version control (e.g. `./secrets/`, already gitignored), and set `APPLE_TEAM_ID`/`APPLE_KEY_ID`/
+  `APPLE_PRIVATE_KEY_PATH` (the path to that file). Only needed to (re)generate album seed data —
+  the app itself never calls the Catalog API at runtime.
 - **TMDB**: free key from [themoviedb.org/settings/api](https://www.themoviedb.org/settings/api).
   Only needed to (re)generate movie seed data — the app itself never calls TMDB at runtime.
 

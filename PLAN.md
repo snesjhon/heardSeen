@@ -107,6 +107,6 @@ independent pieces:
    `supabase start && supabase db reset` (local, needs Docker) once you're ready, and sanity-check
    the `list_progress` view's output against real data.
 3. **Apple Music + TMDB keys.** Albums and movies are both currently seeded as unenriched
-   placeholders. Add `APPLE_TEAM_ID`/`APPLE_KEY_ID`/`APPLE_PRIVATE_KEY` and `TMDB_API_KEY`, then
-   re-run `pnpm run seed:generate && pnpm run seed`.
+   placeholders. Add `APPLE_TEAM_ID`/`APPLE_KEY_ID`/`APPLE_PRIVATE_KEY_PATH` (pointing at your
+   downloaded `.p8` file) and `TMDB_API_KEY`, then re-run `pnpm run seed:generate && pnpm run seed`.
 4. **Deployment.** Vercel project + env vars — last-mile, needs your real credentials.

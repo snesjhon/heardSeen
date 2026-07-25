@@ -5,9 +5,10 @@ Two-step pipeline:
 1. **`pnpm run seed:generate`** — reads the small hand-authored source lists in `sources/*.source.json`
    (title + artist/director only) and enriches each entry with real metadata:
    - Albums: the [Apple Music Catalog API](https://developer.apple.com/documentation/applemusicapi)
-     (needs `APPLE_TEAM_ID`/`APPLE_KEY_ID`/`APPLE_PRIVATE_KEY` in `.env` — an Apple Developer Program
-     membership, ~$99/yr). Without these, albums are written as unenriched placeholders (title/artist
-     only, no artwork/`apple_url`) so the pipeline still runs end-to-end.
+     (needs `APPLE_TEAM_ID`/`APPLE_KEY_ID`/`APPLE_PRIVATE_KEY_PATH` in `.env`, the last one pointing
+     at your downloaded `.p8` key file — an Apple Developer Program membership, ~$99/yr). Without
+     these, albums are written as unenriched placeholders (title/artist only, no artwork/`apple_url`)
+     so the pipeline still runs end-to-end.
    - Movies: [TMDB](https://www.themoviedb.org/settings/api) (needs `TMDB_API_KEY` in `.env`). Without a key,
      movies are written as unenriched placeholders (title only, `apple_url` falls back to a
      `tv.apple.com/search` link) so the pipeline still runs end-to-end.

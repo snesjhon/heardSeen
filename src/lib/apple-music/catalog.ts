@@ -11,6 +11,8 @@
 //
 // Requires an Apple Developer Program membership (~$99/yr) to generate the
 // MusicKit key (Team ID, Key ID, .p8 private key) used to sign the token.
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import jwt from "jsonwebtoken";
 
 const CATALOG_API_BASE = "https://api.music.apple.com/v1/catalog";
@@ -64,15 +66,15 @@ function getDeveloperToken(): string {
 
   const teamId = process.env.APPLE_TEAM_ID;
   const keyId = process.env.APPLE_KEY_ID;
-  const rawPrivateKey = process.env.APPLE_PRIVATE_KEY;
+  const privateKeyPath = process.env.APPLE_PRIVATE_KEY_PATH;
 
-  if (!teamId || !keyId || !rawPrivateKey) {
+  if (!teamId || !keyId || !privateKeyPath) {
     throw new Error(
-      "APPLE_TEAM_ID, APPLE_KEY_ID, and APPLE_PRIVATE_KEY must all be set to call the Apple Music Catalog API",
+      "APPLE_TEAM_ID, APPLE_KEY_ID, and APPLE_PRIVATE_KEY_PATH must all be set to call the Apple Music Catalog API",
     );
   }
 
-  const privateKey = rawPrivateKey.replace(/\\n/g, "\n");
+  const privateKey = readFileSync(resolve(privateKeyPath), "utf-8");
 
   const token = jwt.sign({}, privateKey, {
     algorithm: "ES256",
