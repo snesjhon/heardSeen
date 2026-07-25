@@ -1,0 +1,25 @@
+[
+  { "title": "Kind of Blue", "artist": "Miles Davis" },
+  { "title": "Pet Sounds", "artist": "The Beach Boys" },
+  { "title": "Revolver", "artist": "The Beatles" },
+  { "title": "Abbey Road", "artist": "The Beatles" },
+  { "title": "What's Going On", "artist": "Marvin Gaye" },
+  { "title": "London Calling", "artist": "The Clash" },
+  { "title": "Nevermind", "artist": "Nirvana" },
+  { "title": "OK Computer", "artist": "Radiohead" },
+  { "title": "Blue", "artist": "Joni Mitchell" },
+  { "title": "The Dark Side of the Moon", "artist": "Pink Floyd" },
+  { "title": "Thriller", "artist": "Michael Jackson" },
+  { "title": "Purple Rain", "artist": "Prince" },
+  { "title": "Rumours", "artist": "Fleetwood Mac" },
+  { "title": "Blonde on Blonde", "artist": "Bob Dylan" },
+  {
+    "title": "The Velvet Underground & Nico",
+    "artist": "The Velvet Underground"
+  },
+  { "title": "Songs in the Key of Life", "artist": "Stevie Wonder" },
+  { "title": "Back in Black", "artist": "AC/DC" },
+  { "title": "Exile on Main St.", "artist": "The Rolling Stones" },
+  { "title": "Innervisions", "artist": "Stevie Wonder" },
+  { "title": "Is This It", "artist": "The Strokes" }
+]

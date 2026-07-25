@@ -1,0 +1,282 @@
+[
+  {
+    "type": "movie",
+    "external_id": "unenriched:Citizen Kane",
+    "title": "Citizen Kane",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Citizen%20Kane",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Citizen Kane",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:The Godfather",
+    "title": "The Godfather",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=The%20Godfather",
+    "raw_metadata": {
+      "id": -1,
+      "title": "The Godfather",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Casablanca",
+    "title": "Casablanca",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Casablanca",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Casablanca",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Raging Bull",
+    "title": "Raging Bull",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Raging%20Bull",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Raging Bull",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Singin' in the Rain",
+    "title": "Singin' in the Rain",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Singin'%20in%20the%20Rain",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Singin' in the Rain",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Gone with the Wind",
+    "title": "Gone with the Wind",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Gone%20with%20the%20Wind",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Gone with the Wind",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Lawrence of Arabia",
+    "title": "Lawrence of Arabia",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Lawrence%20of%20Arabia",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Lawrence of Arabia",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Schindler's List",
+    "title": "Schindler's List",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Schindler's%20List",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Schindler's List",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Vertigo",
+    "title": "Vertigo",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Vertigo",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Vertigo",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:The Wizard of Oz",
+    "title": "The Wizard of Oz",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=The%20Wizard%20of%20Oz",
+    "raw_metadata": {
+      "id": -1,
+      "title": "The Wizard of Oz",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Sunset Blvd.",
+    "title": "Sunset Blvd.",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Sunset%20Blvd.",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Sunset Blvd.",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:2001: A Space Odyssey",
+    "title": "2001: A Space Odyssey",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=2001%3A%20A%20Space%20Odyssey",
+    "raw_metadata": {
+      "id": -1,
+      "title": "2001: A Space Odyssey",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Psycho",
+    "title": "Psycho",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Psycho",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Psycho",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Chinatown",
+    "title": "Chinatown",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Chinatown",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Chinatown",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:One Flew Over the Cuckoo's Nest",
+    "title": "One Flew Over the Cuckoo's Nest",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=One%20Flew%20Over%20the%20Cuckoo's%20Nest",
+    "raw_metadata": {
+      "id": -1,
+      "title": "One Flew Over the Cuckoo's Nest",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Star Wars",
+    "title": "Star Wars",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Star%20Wars",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Star Wars",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Taxi Driver",
+    "title": "Taxi Driver",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Taxi%20Driver",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Taxi Driver",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Jaws",
+    "title": "Jaws",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Jaws",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Jaws",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Some Like It Hot",
+    "title": "Some Like It Hot",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Some%20Like%20It%20Hot",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Some Like It Hot",
+      "director": null
+    }
+  },
+  {
+    "type": "movie",
+    "external_id": "unenriched:Goodfellas",
+    "title": "Goodfellas",
+    "creator": "Unknown",
+    "artwork_url": null,
+    "release_year": null,
+    "apple_url": "https://tv.apple.com/search?term=Goodfellas",
+    "raw_metadata": {
+      "id": -1,
+      "title": "Goodfellas",
+      "director": null
+    }
+  }
+]
