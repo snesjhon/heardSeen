@@ -1,31 +1,64 @@
 // Offline enrichment pass: reads the small hand-authored source lists
 // (title/artist or title only) and looks up real metadata (artwork, apple
-// deep link, release year) from the free iTunes Search API (albums) and TMDB
-// (movies, requires TMDB_API_KEY). Writes enriched JSON that seed-runner.ts
-// then upserts into Supabase. Run with: pnpm run seed:generate
+// deep link, release year) from the Apple Music Catalog API (albums,
+// requires APPLE_TEAM_ID/APPLE_KEY_ID/APPLE_PRIVATE_KEY) and TMDB (movies,
+// requires TMDB_API_KEY). Writes enriched JSON that seed-runner.ts then
+// upserts into Supabase. Run with: pnpm run seed:generate
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { type NormalizedAlbum, searchAlbum } from "../../src/lib/itunes/albums";
+import {
+  type NormalizedAlbum,
+  searchAlbum,
+} from "../../src/lib/apple-music/catalog";
 import { type NormalizedMovie, searchMovie } from "../../src/lib/tmdb/movies";
 import { LISTS } from "./lists.config";
 
 const SEED_DIR = __dirname;
 
+function hasAppleMusicCredentials(): boolean {
+  return Boolean(
+    process.env.APPLE_TEAM_ID &&
+      process.env.APPLE_KEY_ID &&
+      process.env.APPLE_PRIVATE_KEY,
+  );
+}
+
 async function enrichAlbums(
   sources: Array<{ title: string; artist: string }>,
 ): Promise<NormalizedAlbum[]> {
+  if (!hasAppleMusicCredentials()) {
+    console.warn(
+      "  ⚠ APPLE_TEAM_ID/APPLE_KEY_ID/APPLE_PRIVATE_KEY not set -- writing unenriched " +
+        "album placeholders. Add your Apple Developer Program MusicKit credentials and " +
+        "re-run to fill in artwork/year/apple_url from the real Catalog API.",
+    );
+    return sources.map((source) => ({
+      type: "album" as const,
+      external_id: `unenriched:${source.artist}:${source.title}`,
+      title: source.title,
+      creator: source.artist,
+      artwork_url: null,
+      release_year: null,
+      apple_url: null,
+      raw_metadata: {
+        id: "",
+        attributes: { name: source.title, artistName: source.artist, url: "" },
+      },
+    }));
+  }
+
   const enriched: NormalizedAlbum[] = [];
 
   for (const source of sources) {
     const result = await searchAlbum(source.title, source.artist);
     if (!result) {
       console.warn(
-        `  ⚠ no iTunes match for "${source.title}" by ${source.artist}`,
+        `  ⚠ no Apple Music match for "${source.title}" by ${source.artist}`,
       );
       continue;
     }
     enriched.push(result);
-    // Be polite to the (undocumented, unofficial-rate-limited) iTunes API.
+    // Be polite to the Catalog API.
     await new Promise((resolve) => setTimeout(resolve, 200));
   }
 

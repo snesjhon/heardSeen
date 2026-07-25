@@ -4,13 +4,17 @@ Two-step pipeline:
 
 1. **`pnpm run seed:generate`** — reads the small hand-authored source lists in `sources/*.source.json`
    (title + artist/director only) and enriches each entry with real metadata:
-   - Albums: the free, keyless iTunes Search API (`entity=album`). No credentials needed.
+   - Albums: the [Apple Music Catalog API](https://developer.apple.com/documentation/applemusicapi)
+     (needs `APPLE_TEAM_ID`/`APPLE_KEY_ID`/`APPLE_PRIVATE_KEY` in `.env` — an Apple Developer Program
+     membership, ~$99/yr). Without these, albums are written as unenriched placeholders (title/artist
+     only, no artwork/`apple_url`) so the pipeline still runs end-to-end.
    - Movies: [TMDB](https://www.themoviedb.org/settings/api) (needs `TMDB_API_KEY` in `.env`). Without a key,
      movies are written as unenriched placeholders (title only, `apple_url` falls back to a
      `tv.apple.com/search` link) so the pipeline still runs end-to-end.
 
    Output goes to `data/*.json`, which is checked into git so the repo is immediately seedable
-   without re-running network calls.
+   without re-running network calls — **currently these are all unenriched placeholders**, since no
+   real credentials exist in this environment. Re-run once you've added yours.
 
 2. **`pnpm run seed`** — upserts `data/*.json` into Supabase (`lists`, `media_items`, `list_items`)
    via the service-role client. Idempotent — safe to re-run after regenerating.
@@ -32,5 +36,5 @@ deliberately out of scope for the initial scaffold. To extend a list:
    `sources/*.source.json` file.
 2. Re-run `pnpm run seed:generate` then `pnpm run seed`.
 
-Some titles won't find an exact match on the first try (iTunes/TMDB search is fuzzy) — check the
+Some titles won't find an exact match on the first try (Apple Music/TMDB search is fuzzy) — check the
 `⚠ no match` warnings `seed:generate` prints and adjust the source title/artist spelling as needed.
