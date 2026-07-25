@@ -1,7 +1,7 @@
 // Offline enrichment pass: reads the small hand-authored source lists
 // (title/artist or title only) and looks up real metadata (artwork, apple
 // deep link, release year) from the Apple Music Catalog API (albums,
-// requires APPLE_TEAM_ID/APPLE_KEY_ID/APPLE_PRIVATE_KEY) and TMDB (movies,
+// requires APPLE_TEAM_ID/APPLE_KEY_ID/APPLE_PRIVATE_KEY_PATH) and TMDB (movies,
 // requires TMDB_API_KEY). Writes enriched JSON that seed-runner.ts then
 // upserts into Supabase. Run with: pnpm run seed:generate
 //
@@ -23,7 +23,7 @@ function hasAppleMusicCredentials(): boolean {
   return Boolean(
     process.env.APPLE_TEAM_ID &&
       process.env.APPLE_KEY_ID &&
-      process.env.APPLE_PRIVATE_KEY,
+      process.env.APPLE_PRIVATE_KEY_PATH,
   );
 }
 
@@ -32,7 +32,7 @@ async function enrichAlbums(
 ): Promise<NormalizedAlbum[]> {
   if (!hasAppleMusicCredentials()) {
     console.warn(
-      "  ⚠ APPLE_TEAM_ID/APPLE_KEY_ID/APPLE_PRIVATE_KEY not set -- writing unenriched " +
+      "  ⚠ APPLE_TEAM_ID/APPLE_KEY_ID/APPLE_PRIVATE_KEY_PATH not set -- writing unenriched " +
         "album placeholders. Add your Apple Developer Program MusicKit credentials and " +
         "re-run to fill in artwork/year/apple_url from the real Catalog API.",
     );
