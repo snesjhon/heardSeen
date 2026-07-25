@@ -2,6 +2,10 @@
 // Supabase via the service-role client, bypassing RLS. Idempotent: safe to
 // re-run -- lists/media_items/list_items are all upserted on their unique
 // keys. Run with: pnpm run seed
+//
+// Run standalone via tsx, outside of Next.js -- unlike Next, plain Node
+// doesn't auto-load .env, so this loads it explicitly.
+import "dotenv/config";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { createAdminClient } from "../../src/lib/supabase/admin";

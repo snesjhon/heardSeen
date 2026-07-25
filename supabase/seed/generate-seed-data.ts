@@ -4,6 +4,10 @@
 // requires APPLE_TEAM_ID/APPLE_KEY_ID/APPLE_PRIVATE_KEY) and TMDB (movies,
 // requires TMDB_API_KEY). Writes enriched JSON that seed-runner.ts then
 // upserts into Supabase. Run with: pnpm run seed:generate
+//
+// Run standalone via tsx, outside of Next.js -- unlike Next, plain Node
+// doesn't auto-load .env, so this loads it explicitly.
+import "dotenv/config";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import {
