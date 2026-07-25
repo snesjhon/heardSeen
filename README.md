@@ -36,12 +36,13 @@ Fill in `.env`:
 - **TMDB**: free key from [themoviedb.org/settings/api](https://www.themoviedb.org/settings/api).
   Only needed to (re)generate movie seed data — the app itself never calls TMDB at runtime.
 
-Apply the schema (requires the [Supabase CLI](https://supabase.com/docs/guides/cli) and either
-Docker for local dev, or a linked remote project):
+Apply the schema directly to your hosted Supabase project (no Docker needed — that's only
+required for `supabase start`/local-only dev, which this skips entirely):
 
 ```bash
-pnpm exec supabase link --project-ref <your-project-ref>
-pnpm exec supabase db push
+pnpm exec supabase login                        # opens a browser to authenticate the CLI
+pnpm exec supabase link --project-ref <your-project-ref>   # ref is in the dashboard URL, e.g. supabase.com/dashboard/project/<ref>
+pnpm exec supabase db push                       # applies supabase/migrations/*.sql to the real database
 ```
 
 Load the seed data (three sample curated lists — see `supabase/seed/README.md` for scope):
