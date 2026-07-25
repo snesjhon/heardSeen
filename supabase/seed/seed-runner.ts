@@ -1,7 +1,11 @@
 // Upserts the enriched JSON files (produced by generate-seed-data.ts) into
-// Supabase via the service-role client, bypassing RLS. Idempotent: safe to
-// re-run -- lists/media_items/list_items are all upserted on their unique
-// keys. Run with: pnpm run seed
+// Supabase via the service-role client, bypassing RLS. lists/media_items/
+// list_items are all upserted on their unique keys, so re-running is safe
+// AS LONG AS a media_item's external_id hasn't changed since the last run.
+// If it has (e.g. you're moving off placeholder data -- see
+// reset-seed-tables.ts), upsert() creates a new row instead of replacing the
+// old one, since the conflict key no longer matches; run
+// `pnpm run seed:reset` first in that case. Run with: pnpm run seed
 //
 // Run standalone via tsx, outside of Next.js -- unlike Next, plain Node
 // doesn't auto-load .env, so this loads it explicitly.

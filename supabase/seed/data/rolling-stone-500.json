@@ -1,341 +1,1082 @@
 [
   {
     "type": "album",
-    "external_id": "unenriched:Marvin Gaye:What's Going On",
+    "external_id": "1538081586",
     "title": "What's Going On",
     "creator": "Marvin Gaye",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/36/2d/76362d74-cb7a-8ef9-104e-cde1d858e9a9/20UMGIM95279.rgb.jpg/600x600bb.jpg",
+    "release_year": 1971,
+    "apple_url": "https://music.apple.com/us/album/whats-going-on/1538081586",
     "raw_metadata": {
-      "id": "",
+      "id": "1538081586",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1538081586",
       "attributes": {
-        "name": "What's Going On",
         "artistName": "Marvin Gaye",
-        "url": ""
+        "artwork": {
+          "bgColor": "4a5a4c",
+          "height": 3000,
+          "textColor1": "dee9e6",
+          "textColor2": "e1ccb6",
+          "textColor3": "c0ccc7",
+          "textColor4": "c3b5a1",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/36/2d/76362d74-cb7a-8ef9-104e-cde1d858e9a9/20UMGIM95279.rgb.jpg/{w}x{h}bb.jpg",
+          "width": 3000
+        },
+        "copyright": "A Motown Records Release; ℗ 1971 Motown Records, a Division of UMG Recordings, Inc.",
+        "editorialNotes": {
+          "short": "Proof that soul music can still be both confrontational and soothing.",
+          "standard": "<b>100 Best Albums</b> When Marvin Gaye brought the title track of 1971’s <i>What’s Going On</i> to Motown founder Berry Gordy, Gordy reportedly said it was the worst thing he’d ever heard. The music was too loose, the lyrics too political. Too political? Gaye countered. This is the 1970s: You’ve got the Vietnam War; you’ve got growing poverty and systemic racism; you’ve got an environment under threat. Even Elvis was singing protest songs (1969’s “In the Ghetto”)—why couldn’t Marvin Gaye?<br />\nThe album’s genius is in its lightness. Songs drift and breathe; performances feel natural, even offhand—Eli Fontaine's saxophone part on the title track, for example, was recorded when Fontaine thought he was just warming up. As Sly & The Family Stone channeled their anger into into bitter funk (1971’s <i>There’s a Riot Goin’ On</i>), Gaye sublimated his in lush string sections and Latin percussion—signals not just of musical gentleness, but cultural sophistication. Even in the face of bleakness (the addiction portrait of “Flyin’ High [In the Friendly Sky],” “Inner City Blues [Make Me Wanna Holler]”), he floats.<br />\nThe revelation is that political music doesn’t have to be confrontational—it can be mellow and inviting too, the province not just of radicals, but the same mixed, middle-class audiences that had been buying Gaye’s albums all along. You catch more flies with honey than with vinegar, and as Gaye seems to say on <i>What’s Going On</i>, you don’t have to be a hippie to be worried by what you see—you just have to be human.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "R&B/Soul",
+          "Music",
+          "Motown",
+          "Soul",
+          "Pop",
+          "Soft Rock",
+          "Contemporary R&B"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "What's Going On",
+        "playParams": {
+          "id": "1538081586",
+          "kind": "album"
+        },
+        "recordLabel": "UNI/MOTOWN",
+        "releaseDate": "1971-05-21",
+        "trackCount": 9,
+        "upc": "00602435428277",
+        "url": "https://music.apple.com/us/album/whats-going-on/1538081586"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:The Beach Boys:Pet Sounds",
+    "external_id": "1440841241",
     "title": "Pet Sounds",
     "creator": "The Beach Boys",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/35/bb/c4/35bbc4eb-9387-97b0-b138-64b7a949ea43/13UABIM03512.rgb.jpg/600x600bb.jpg",
+    "release_year": 1966,
+    "apple_url": "https://music.apple.com/us/album/pet-sounds/1440841241",
     "raw_metadata": {
-      "id": "",
+      "id": "1440841241",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1440841241",
       "attributes": {
-        "name": "Pet Sounds",
         "artistName": "The Beach Boys",
-        "url": ""
+        "artwork": {
+          "bgColor": "408c52",
+          "height": 1500,
+          "textColor1": "030504",
+          "textColor2": "151413",
+          "textColor3": "0f2014",
+          "textColor4": "1e2c20",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/35/bb/c4/35bbc4eb-9387-97b0-b138-64b7a949ea43/13UABIM03512.rgb.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "copyright": "℗ 2012 Capitol Records, LLC",
+        "editorialNotes": {
+          "short": "When you’re young, everything hits with the weight of an orchestra.",
+          "standard": "<b>100 Best Albums</b> No matter where you’re at in life, stepping into <i>Pet Sounds</i> can feel like stepping back into childhood. The colors are brighter, the scale bigger. There are moments of wonder and excitement (“Wouldn’t It Be Nice”) and moments of profound pain (“I Just Wasn’t Made for These Times”). Brian Wilson’s arrangements brought a complexity to rock music that nobody had heard before, but they also captured a simple, poetic point: When you’re young, everything hits with the weight of an orchestra.\n\nWilson was a child of Southern California and Disney, of the great suburban myths that shaped America after World War II: The joke is that his brother Dennis was the only Beach Boy who actually surfed, while the rest just held boards to sell a story. At a mid-’60s moment when bands like The Velvet Underground were starting to use pop to explore rough, bracing realities, <i>Pet Sounds</i> reached back to the fantasies of ’30s pop and ’50s exotica, of old Hollywood and early television. And as sacred as the album’s mood is (Wilson called his next project, <i>Smile</i>, a “teenage symphony to God”), it makes sense that its co-lyricist, Tony Asher, had come from advertising: No matter how ambitious he got, he also knew he needed to project something neat, immediate, and universal.\n\nOf all <i>Pet Sounds</i>’ legacies, the most profound is the idea that pop music—something accessible and extroverted—could be used to express deep, internal worlds. Wilson’s experiments with LSD aren’t obvious in any garish, cartoonish way. But you can hear him trying to excavate feelings buried so deep in the underbrush of shame and memory that seeking them out is an adventure on par with any. <i>Pet Sounds</i> is a reminder that the core of courage is innocence, and that just because you can’t change the past doesn’t mean it doesn’t still hurt.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "Rock",
+          "Music",
+          "Pop",
+          "Pop/Rock",
+          "Soft Rock",
+          "Rock & Roll",
+          "Adult Contemporary",
+          "Psychedelic"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "Pet Sounds",
+        "playParams": {
+          "id": "1440841241",
+          "kind": "album"
+        },
+        "recordLabel": "Capitol Records",
+        "releaseDate": "1966-05-16",
+        "trackCount": 13,
+        "upc": "00602547297433",
+        "url": "https://music.apple.com/us/album/pet-sounds/1440841241"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Joni Mitchell:Blue",
+    "external_id": "1492263092",
     "title": "Blue",
     "creator": "Joni Mitchell",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/00/a2/43/00a24363-cf69-bfd2-a26a-a042d57ab141/075992719926.jpg/600x600bb.jpg",
+    "release_year": 1971,
+    "apple_url": "https://music.apple.com/us/album/blue/1492263092",
     "raw_metadata": {
-      "id": "",
+      "id": "1492263092",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1492263092",
       "attributes": {
-        "name": "Blue",
         "artistName": "Joni Mitchell",
-        "url": ""
+        "artwork": {
+          "bgColor": "001a5e",
+          "height": 4000,
+          "textColor1": "cddef7",
+          "textColor2": "adc8eb",
+          "textColor3": "a4b7d8",
+          "textColor4": "8aa5cf",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/00/a2/43/00a24363-cf69-bfd2-a26a-a042d57ab141/075992719926.jpg/{w}x{h}bb.jpg",
+          "width": 4000
+        },
+        "copyright": "℗ 1971 Warner Records Inc. Marketed By Rhino Entertainment Company, a Warner Music Group Company.",
+        "editorialNotes": {
+          "short": "An exploration of love and loss both intimate and universal.",
+          "standard": "<b>100 Best Albums</b> For most, a greasy skillet is a nuisance in the kitchen sink, an upcoming chore. But for Joni Mitchell, it’s a ripe romantic metaphor in waiting. In “My Old Man,” the second track on her fourth album, 1971’s <i>Blue</i>, the singer-songwriter plays the piano while singing a sunny ode to the life she shared with a “singer in the park” and “dancer in the dark” who keeps her blues at bay. She boasts of their bond, as strong as a marriage without the formality of it (“We don’t need no piece of paper from the city hall”), and pays him one of the highest compliments a musician can bestow (“He’s the warmest chord I ever heard”). But the bridge of “My Old Man” offers a chilly, atonal changeup in the midst of Mitchell’s warm affection that bubbles up from a deeper, darker place than the pleasantries: “But when he’s gone, me and them lonesome blues collide/The bed’s too big, the frying pan’s too wide.”<br />\n<i>Blue</i> is brimming with moments like this—otherwise pedestrian snapshots that Mitchell renders eternal. It’s not enough for her to say she’s lonely when her lover leaves; her ache is visceral, one that’s felt in the space he leaves behind in a tangle of bedsheets and the skillet that makes one breakfast instead of two. When Mitchell wrote <i>Blue</i>, she had long since moved on from the Saskatchewan stages of her early years and the folk scene of Toronto: Then three albums deep into her career, she had built an international following on the strength of her songwriting, her cloud-grazing voice, and the intimacy she conjures when she brings both to the microphone. Her preceding album, 1970’s <i>Ladies of the Canyon</i>, delivered the effervescent “Big Yellow Taxi,” one of her biggest hits, along with the moody “Woodstock” and sing-along classic “The Circle Game.” She became a Laurel Canyon fixture as the ’60s roiled into the ’70s, as well as the favorite singer-songwriter of some of the world’s favorite singer-songwriters—from Graham Nash (her longtime love and likely muse for “My Old Man” and “A Case of You”) and David Crosby (who produced her debut album) to Leonard Cohen (another former flame who’s also rumored to have been the inspiration for “A Case of You”) and James Taylor, with whom she struck up a romance at the top of the decade.<br />\n<i>Blue</i> took shape in a moment of personal transition for Mitchell, right after the end of her relationship with Nash and just as she was falling for Taylor: She wrote her way out of an old love and into a new one, all while infusing her lyrics with the nostalgia, pain, joy, excitement, and appreciation for all that bubbled to the surface in that period. And while <i>Blue</i> offers a glimpse into the recesses of Mitchell’s heart at the time, it explores all love and loss, not just of the romantic sort (“Little Green” is an ode to the daughter she gave up for adoption, which she wouldn’t reveal until the ’90s). Long hailed as her magnum opus, <i>Blue</i> is as much a testament to her talent as it is the readiness with which she’s willing to share her most intimate truths. ",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "Singer/Songwriter",
+          "Music",
+          "Rock",
+          "Singer/Songwriter",
+          "Pop",
+          "Soft Rock",
+          "Adult Contemporary"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "Blue",
+        "playParams": {
+          "id": "1492263092",
+          "kind": "album"
+        },
+        "recordLabel": "Rhino/Warner Records",
+        "releaseDate": "1971-06-22",
+        "trackCount": 10,
+        "upc": "603497921805",
+        "url": "https://music.apple.com/us/album/blue/1492263092"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Stevie Wonder:Songs in the Key of Life",
+    "external_id": "1440788438",
     "title": "Songs in the Key of Life",
     "creator": "Stevie Wonder",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/eb/1f/12/eb1f12ec-474c-63aa-43af-09282f423b9d/00602537004737.rgb.jpg/600x600bb.jpg",
+    "release_year": 1976,
+    "apple_url": "https://music.apple.com/us/album/songs-in-the-key-of-life/1440788438",
     "raw_metadata": {
-      "id": "",
+      "id": "1440788438",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1440788438",
       "attributes": {
-        "name": "Songs in the Key of Life",
         "artistName": "Stevie Wonder",
-        "url": ""
+        "artwork": {
+          "bgColor": "f58238",
+          "height": 1500,
+          "textColor1": "1f0f0f",
+          "textColor2": "310d0a",
+          "textColor3": "4a2617",
+          "textColor4": "582513",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/eb/1f/12/eb1f12ec-474c-63aa-43af-09282f423b9d/00602537004737.rgb.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "copyright": "℗ 1976 Motown Records, a Division of UMG Recordings, Inc.",
+        "editorialNotes": {
+          "short": "One of the most ambitious, adventurous albums ever made.",
+          "standard": "<b>100 Best Albums</b> In 1974, Stevie Wonder was the most critically revered pop star in the world; he was also considering leaving the music industry altogether. So when <i>Songs in the Key of Life</i> was released two years later, demand was so high that it became, at the time, the fastest-selling album in history. Wonder positioned himself as the purveyor of a vast self-drawn cosmos, one with a remarkable cache of songs: <i>Songs in the Key of Life</i>, which runs nearly 90 minutes, is effortlessly melodic, broad in scope, deeply personal—and often just plain weird.\n\nStart with the brassy and positively effusive chart-topping singles “Sir Duke” and “I Wish,” both nostalgic and modern-sounding at once. At the other end of the spectrum: the stark reality of “Village Ghetto Land” and “Pastime Paradise,” on which Wonder decries the abandonment of the civil rights dream. Then there’s the joyous “Isn’t She Lovely,” celebrating the arrival of Wonder’s daughter Aisha.\n\nAs <i>Songs in the Key of Life</i> nears its conclusion, Wonder returns to the dance floor for 15 minutes of sumptuous gospel-disco in “As” and “Another Star,” each expressing a deep passion in layers of instrumentation and impressive vocal runs. But Stevie isn’t done; another defining moment on the album is a bonus track, one originally issued as an extra 45 with the album’s vinyl release. It starts in deep space with the Afrofuturist fantasia “Saturn,” and then, as its last synthesizer chords fade out, Wonder zooms light-years to an urban playground where we can hear the sound of children skipping Double Dutch. Sonically, culturally, and emotionally, <i>Songs in the Key of Life</i> is much more than a gigantic collection of songs—it forms an entire worldview.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "Motown",
+          "Music",
+          "R&B/Soul",
+          "Pop",
+          "Soul",
+          "Funk",
+          "Contemporary R&B",
+          "Rock",
+          "Arena Rock"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "Songs in the Key of Life",
+        "playParams": {
+          "id": "1440788438",
+          "kind": "album"
+        },
+        "recordLabel": "UNI/MOTOWN",
+        "releaseDate": "1976-09-28",
+        "trackCount": 21,
+        "upc": "00602537004737",
+        "url": "https://music.apple.com/us/album/songs-in-the-key-of-life/1440788438"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Fleetwood Mac:Rumours",
+    "external_id": "594061854",
     "title": "Rumours",
     "creator": "Fleetwood Mac",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/600x600bb.jpg",
+    "release_year": 1977,
+    "apple_url": "https://music.apple.com/us/album/rumours/594061854",
     "raw_metadata": {
-      "id": "",
+      "id": "594061854",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/594061854",
       "attributes": {
-        "name": "Rumours",
         "artistName": "Fleetwood Mac",
-        "url": ""
+        "artwork": {
+          "bgColor": "fffce9",
+          "height": 2400,
+          "textColor1": "050608",
+          "textColor2": "232429",
+          "textColor3": "373735",
+          "textColor4": "4f4f4f",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/{w}x{h}bb.jpg",
+          "width": 2400
+        },
+        "copyright": "℗ 2004 Warner Records Inc.",
+        "editorialNotes": {
+          "short": "Songs that somehow outshine the melodrama that forged them.",
+          "standard": "<b>100 Best Albums</b> To understand what made <i>Rumours</i> so impactful, you have to look at the music that came out around it. This was the era of the Eagles and Linda Ronstadt: artists who, like Fleetwood Mac, combined the intimacy of singer-songwriters with a softened take on rock ’n’ roll. But it was also the era of Boston, Foreigner, Pink Floyd and a wave of bands that scaled up the ambition of ’60s rock to blockbuster heights—stuff that parents who loved doo-wop and early Beatles records might not care about, but millions of teenagers would. Not to mention Barry Manilow and Neil Diamond, ABBA and the Bee Gees, and The Clash and Patti Smith—all of whom were totally different, but who collectively drove pop-rock to greater extremes of showmanship, polish, and rebellion.\n \nAnd there, in the middle of the road, is <i>Rumours</i>. When they rock, they do it gently (“The Chain”), but with a bite that sets them apart from their adult-contemporary contemporaries (“Go Your Own Way”). And while they capture the carefree positivity of the good life (and the Baby Boomers living it), they don’t shy away from the pains it took to get there (“Don’t Stop,” “Dreams”). As beautifully as their musical personalities meld (the blues-raised rhythm section of Mick Fleetwood and John McVie, the romanticism of Christine McVie, pop perfectionism of Lindsey Buckingham, and mysticism of Stevie Nicks), you can always hear them tugging gently on each other, an internal drama that’s all the more poignant given how restrained the final product is.\n\nRadical? No: In some ways, <i>Rumours</i> sounds like it doesn’t know the wilder developments of the late 1960s—psychedelia, experimental, and progressive rock—even happened. But for an album that went on to sell more than 10 million copies, it’s tougher and more unsettling than it probably should be. The band has given plenty of interviews over the years attesting to how they strove to serve the song, no matter how painful or personal—which, in the context of Buckingham’s “Go You Own Way” or Nicks’ “Dreams,” must’ve been very, let alone John McVie backing up his newly ex-wife on a song about how fulfilled she is in her current relationship (“You Make Loving Fun”). Co-producer Ken Caillat remembers watching Buckingham and Nicks scream at each other during recordings, only to compose themselves just in time for the tape to start rolling. It’s a good metaphor: Even if you ignore the album’s soap opera (which included the implosion of three relationships, two of them between couples in the band), <i>Rumours</i> captures the pain of a band keeping it perfectly together while in the midst of falling apart.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "Rock",
+          "Music",
+          "Arena Rock",
+          "Pop",
+          "Pop/Rock",
+          "Soft Rock"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": false,
+        "isSingle": false,
+        "name": "Rumours",
+        "playParams": {
+          "id": "594061854",
+          "kind": "album"
+        },
+        "recordLabel": "Rhino/Warner Records",
+        "releaseDate": "1977-02-04",
+        "trackCount": 11,
+        "upc": "603497925797",
+        "url": "https://music.apple.com/us/album/rumours/594061854"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Prince:Purple Rain",
-    "title": "Purple Rain",
+    "external_id": "1545704089",
+    "title": "The Very Best of Prince",
     "creator": "Prince",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/67/7c/53/677c53d2-e388-2189-08a6-c2bed5505dc5/886448969815.jpg/600x600bb.jpg",
+    "release_year": 2001,
+    "apple_url": "https://music.apple.com/us/album/the-very-best-of-prince/1545704089",
     "raw_metadata": {
-      "id": "",
+      "id": "1545704089",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1545704089",
       "attributes": {
-        "name": "Purple Rain",
         "artistName": "Prince",
-        "url": ""
+        "artwork": {
+          "bgColor": "000000",
+          "height": 3000,
+          "textColor1": "cac0bc",
+          "textColor2": "d4ae71",
+          "textColor3": "a29a96",
+          "textColor4": "aa8b5a",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/67/7c/53/677c53d2-e388-2189-08a6-c2bed5505dc5/886448969815.jpg/{w}x{h}bb.jpg",
+          "width": 3000
+        },
+        "contentRating": "explicit",
+        "copyright": "℗ This compilation (P) 2001 NPG Records, Inc. under exclusive license to Legacy Recordings",
+        "editorialNotes": {
+          "standard": "It wouldn’t be right to title this comp <i>The Very Best of Prince</i> without a heavy dose of his household hits. That’s why it opens with his 1979 disco nugget “I Wanna Be Your Lover,” followed by the pre-Y2K anthem \"1999.\" But it’s in the more energetic standouts like “Let’s Go Crazy” and “I Would Die 4 U” where we get a better glimpse of the man’s talent for crafting perfect pop. “When Doves Cry” serves as a reminder that Prince is also a stellar guitarist."
+        },
+        "genreNames": [
+          "Pop",
+          "Music",
+          "R&B/Soul",
+          "Funk",
+          "Pop/Rock",
+          "Contemporary R&B",
+          "Dance"
+        ],
+        "isCompilation": true,
+        "isComplete": false,
+        "isMasteredForItunes": false,
+        "isSingle": false,
+        "name": "The Very Best of Prince",
+        "playParams": {
+          "id": "1545704089",
+          "kind": "album"
+        },
+        "recordLabel": "Legacy Recordings",
+        "releaseDate": "2001-07-31",
+        "trackCount": 17,
+        "upc": "886448969815",
+        "url": "https://music.apple.com/us/album/the-very-best-of-prince/1545704089"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Bob Dylan:Blonde on Blonde",
-    "title": "Blonde on Blonde",
+    "external_id": "178049863",
+    "title": "Blonde On Blonde",
     "creator": "Bob Dylan",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/20/9d/bf/209dbf58-f698-7181-33de-0c29480beba0/074640084126.jpg/600x600bb.jpg",
+    "release_year": 1966,
+    "apple_url": "https://music.apple.com/us/album/blonde-on-blonde/178049863",
     "raw_metadata": {
-      "id": "",
+      "id": "178049863",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/178049863",
       "attributes": {
-        "name": "Blonde on Blonde",
         "artistName": "Bob Dylan",
-        "url": ""
+        "artwork": {
+          "bgColor": "ae8f6a",
+          "height": 3000,
+          "textColor1": "151210",
+          "textColor2": "181715",
+          "textColor3": "332b22",
+          "textColor4": "362f26",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/20/9d/bf/209dbf58-f698-7181-33de-0c29480beba0/074640084126.jpg/{w}x{h}bb.jpg",
+          "width": 3000
+        },
+        "copyright": "℗ Originally Released 1966 Sony Music Entertainment Inc.",
+        "editorialNotes": {
+          "short": "A double-album masterpiece, featuring some of Dylan’s best-known numbers.",
+          "standard": "By the end of 1965, Bob Dylan was on an unprecedented tear. That year, he’d shocked the folk faithful by turning electric and inward, with both <i>Bringing It All Back Home</i> and <i>Highway 61 Revisited</i> finding him howling questions about how he fit inside the world—and, as a result, fending off resulting accusations of heresy. Only two months after the release of <i>Highway 61</i>, Dylan returned to a New York studio with his new backing band, The Hawks, for a series of frustrating sessions that resulted in very little. But in early 1966, at the behest of producer Bob Johnston, Dylan decamped to Nashville alongside guitarist Robbie Robertson and keyboardist Al Kooper to try again with a set of country aces. In relatively short order, <i>Blonde on Blonde</i>—a gargantuan statement of love, loss, and longing, built with some of Dylan’s best barbs and most beautiful phrases—was finished.\n\n<i>Blonde on Blonde</i> opens with “Rainy Day Women #12 and 35,” an outlier that became a hit. The ragtime piano and jubilant singing about everybody being stoned made for an easy sell, but it was a defiant little curio, too, with Dylan shrugging off those who were stoning him for his wild artistic turns. The album’s remaining 70 minutes toggle among happiness, horniness, and hopefulness, as the newly married Dylan sorts through his back pages of failed relationships and lurid affairs, trying to cast them aside like old skin.\n\nDylan ponders his ideal lover, even as he lingers in the clutches of Louise, during the graceful “Visions of Johanna.” He scoffs at his past foolishness in “Temporary Like Achilles,” finding kinship with an old lover’s new suitor (who’ll surely be pushed aside sooner than he expects). And he hilariously beats on his own trumpet during the walloping “Absolutely Sweet Marie” and spies on an old flame making love in a dilapidated garage for the brutal “Leopard-Skin Pill-Box Hat,” a kiss-off of the highest order. Then there’s the striking “Just Like a Woman”: Inspired by the soul music stirring from Memphis and Detroit, the song defines the double-edged joy and danger of any relationship, anchoring Dylan’s lyrics to one of rock’s definitive hooks.\n\nBoth <i>Bringing It All Back Home</i> and <i>Highway 61 Revisited</i> had found Dylan straying from politics and folk forms—but he’d yet to cut the tether. <i>Blonde on Blonde</i>, the first double-album masterpiece of the rock ’n’ roll era, would slash that tie with glee and aplomb. Its 11-minute finale, “Sad-Eyed Lady of the Lowlands,” was a worship song of sorts for his first wife, Sara Lownds, indulging in his sense of wonder over her and her mystery. His previous work could have never held such a personal testimonial, cloaked in poetry and guided by an attentive Nashville crew."
+        },
+        "genreNames": [
+          "Rock",
+          "Music",
+          "Psychedelic",
+          "Pop",
+          "Pop/Rock",
+          "Rock & Roll",
+          "Blues-Rock",
+          "Singer/Songwriter",
+          "Arena Rock",
+          "Singer/Songwriter",
+          "Folk-Rock"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "Blonde On Blonde",
+        "playParams": {
+          "id": "178049863",
+          "kind": "album"
+        },
+        "recordLabel": "Columbia",
+        "releaseDate": "1966-06-20",
+        "trackCount": 14,
+        "upc": "074640084126",
+        "url": "https://music.apple.com/us/album/blonde-on-blonde/178049863"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Nirvana:Nevermind",
+    "external_id": "1440783617",
     "title": "Nevermind",
     "creator": "Nirvana",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/95/fd/b9/95fdb9b2-6d2b-92a6-97f2-51c1a6d77f1a/00602527874609.rgb.jpg/600x600bb.jpg",
+    "release_year": 1991,
+    "apple_url": "https://music.apple.com/us/album/nevermind/1440783617",
     "raw_metadata": {
-      "id": "",
+      "id": "1440783617",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1440783617",
       "attributes": {
-        "name": "Nevermind",
         "artistName": "Nirvana",
-        "url": ""
+        "artwork": {
+          "bgColor": "006783",
+          "height": 1500,
+          "textColor1": "68e2f8",
+          "textColor2": "38d6f9",
+          "textColor3": "53cae1",
+          "textColor4": "2dc0e2",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/95/fd/b9/95fdb9b2-6d2b-92a6-97f2-51c1a6d77f1a/00602527874609.rgb.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "contentRating": "explicit",
+        "copyright": "℗ 2011 Geffen Records",
+        "editorialNotes": {
+          "short": "When hyperbole about changing the world is somehow an understatement.",
+          "standard": "<b>100 Best Albums</b> Even now, years after you first felt its edges, the chorus of “Smells Like Teen Spirit” still sounds too dangerous—too loud, too ugly, too <i>upset</i>—for any mainstream. And yet <i>Nevermind</i>’s opening salvo didn’t just mark an unlikely breakthrough for the Seattle trio, it upended popular culture in ways we haven’t seen since. Punk became pop, grunge became global vernacular, industry walls broke into rubble, and lead vocalist Kurt Cobain was anointed the reluctant voice of a generation in need of catharsis, all seemingly overnight. But what makes Nirvana’s second album special isn’t its rage, but its innocence. For as haunting and corrosive as it can often be, it was never at the expense of melody or songcraft or humanity. \n\nThe old guard was actually still alive and well: Both Metallica’s Black Album and Guns N’ Roses’ two-volume <i>Use Your Illusion</i> famously came out within weeks of <i>Nevermind</i>. And while the album went on to sell about as well as those—even displacing Michael Jackson’s <i>Dangerous</i> as the best-selling album in the United States for a brief moment in 1992—Nirvana’s influence extended well beyond sheer economics, cutting a path for generations of forward-looking artists that stretches from Radiohead to Billie Eilish. They presented themselves not as rock gods, but ordinary (and highly sensitive) mortals. As an alternative to the pinup in leather pants, they offered the proud feminist, screaming until his voice gave out (“Territorial Pissings”). In place of the glossy power ballad, they delivered something fragile and raw (“Polly,” “Something in the Way”).\n\nNirvana’s angst didn’t only come across in the lyrics, but in the delivery. None of Cobain’s wisdom or fury would have resonated in the culture-shaking way it did if not for the sort of tunefulness that has always had a way of making wisdom and fury go down a little easier.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": ["Rock", "Music"],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "Nevermind",
+        "playParams": {
+          "id": "1440783617",
+          "kind": "album"
+        },
+        "recordLabel": "Geffen",
+        "releaseDate": "1991-09-24",
+        "trackCount": 13,
+        "upc": "00602527874609",
+        "url": "https://music.apple.com/us/album/nevermind/1440783617"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Michael Jackson:Thriller",
+    "external_id": "269572838",
     "title": "Thriller",
     "creator": "Michael Jackson",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+    "release_year": 1982,
+    "apple_url": "https://music.apple.com/us/album/thriller/269572838",
     "raw_metadata": {
-      "id": "",
+      "id": "269572838",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/269572838",
       "attributes": {
-        "name": "Thriller",
         "artistName": "Michael Jackson",
-        "url": ""
+        "artwork": {
+          "bgColor": "0d0f11",
+          "height": 1500,
+          "textColor1": "f2f5db",
+          "textColor2": "e0e7d5",
+          "textColor3": "c4c7b2",
+          "textColor4": "b6bbae",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "copyright": "℗ 1982 MJJ Productions Inc.",
+        "editorialNotes": {
+          "short": "A landmark that did nothing less than redefine the scope and reach of pop.",
+          "standard": "<b>100 Best Albums</b> There are few pop albums, or even works of art, that denote a wholesale shift in time and space the way Michael Jackson’s <i>Thriller</i> did in 1982. Noting its impact on the career trajectory of a child star turned R&B hitmaker feels reductive; talking about its record-smashing commercial success diminishes its creative leaps. It did nothing less than define the modern pop blockbuster and redefine the scope and reach of music.\n\nStripping the weight of history from <i>Thriller</i> is a big job, but hearing the record as a statement in itself remains hugely rewarding. Seven of its nine original cuts were Top 10 singles, and it became one of the best-selling albums ever made, but more important is the way Jackson and producer Quincy Jones turned the singer’s obsessions into intricate, stunningly sung pop-funk. \n\nThe album’s opening throwdown, “Wanna Be Startin’ Somethin’,” is Jackson at his fiercest and funkiest, picking up right where 1979’s <i>Off the Wall</i> left off—and shoring up his R&B bona fides. But from the Paul McCartney-blessed pop of the first hit single “The Girl Is Mine” to the Eddie Van Halen-revved pyrotechnics of “Beat It,” Jackson’s crossover moves opened up the eyes and ears of the industry—and audiences around the world—to what music could sound, look, and feel like if we blurred those old color lines. “Billie Jean” is a gripping psycho-study of the paranoia and persecution that he was already feeling—yet it still maintains the mysterious allure of an artist who became the avatar for the omnipresent global pop superstar.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": ["Pop", "Music"],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "Thriller",
+        "playParams": {
+          "id": "269572838",
+          "kind": "album"
+        },
+        "recordLabel": "Epic",
+        "releaseDate": "1982-11-29",
+        "trackCount": 9,
+        "upc": "074643811224",
+        "url": "https://music.apple.com/us/album/thriller/269572838"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Lauryn Hill:The Miseducation of Lauryn Hill",
+    "external_id": "1276760743",
     "title": "The Miseducation of Lauryn Hill",
     "creator": "Lauryn Hill",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/09/6b/55/096b55c4-ee8f-23bd-df8f-0ca0821f3028/886446727189.jpg/600x600bb.jpg",
+    "release_year": 1998,
+    "apple_url": "https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743",
     "raw_metadata": {
-      "id": "",
+      "id": "1276760743",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1276760743",
       "attributes": {
-        "name": "The Miseducation of Lauryn Hill",
         "artistName": "Lauryn Hill",
-        "url": ""
+        "artwork": {
+          "bgColor": "ce8852",
+          "height": 1500,
+          "textColor1": "080304",
+          "textColor2": "0b0304",
+          "textColor3": "301e13",
+          "textColor4": "321e13",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/09/6b/55/096b55c4-ee8f-23bd-df8f-0ca0821f3028/886446727189.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "copyright": "℗ 1998 Ruffhouse Records LP",
+        "editorialNotes": {
+          "short": "Raw, profound, and era-defining, its mastery has never been duplicated.",
+          "standard": "<b>100 Best Albums</b> Lauryn Hill’s debut—and only—solo studio album was a seismic event in 1998: a stunningly raw, profound look into the spiritual landscape not just of one of the era’s biggest stars, but of the era itself. Decades later, <i>The Miseducation of Lauryn Hill</i> still counts as a life-changer, with the preternaturally talented Hill rapping with the confident ferocity of a woman in total creative control and singing with the gospel-hued richness of the soul canon. It was an expression of interior depth during a time in which Black women were often portrayed as one-dimensional archetypes, and Hill delivered her magnum opus of life’s triumphs and setbacks with such singular heart, sincerity, and specificity that it transcended from an album into a universal statement of being. Her fortitude was so powerful that new generations continue to discover an album whose specific mastery of musicality, lyricism, and frankness has not been replicated. \n\n<i>Miseducation</i> was forged in emotional fire. After seven years as the voice of the politically cogent, critically acclaimed New Jersey hip-hop trio Fugees—and in the aftermath of a protracted, tumultuous relationship with her bandmate Wyclef Jean—Hill set out to document a period of major life transitions, including the slow erosion of the group she’d been with since high school. With the trauma came new beginnings: Hill was also inspired by the physical and mental transitions of pregnancy and the birth of Zion, her first child with Rohan Marley, using her attendant spirituality as a guiding light. This potent emotional crossroads led to what remains one of the rawest albums ever created, a lasting artistic beacon for musicians across genre, and a moment in which the whole world recognized Hill’s talents. \n\n<i>Miseducation</i>’s opening track, in which a teacher announces a classroom roll call only for Lauryn Hill to be absent, speaks to its thesis: that its lessons were of the sort that can only be learned through lived experience. As she weaved through painful eviscerations of an ex, which even at the time were understood to be directed at Jean, she redefined the way gritty, sharp rapping and lavish R&B harmonies could fuse together in an era of nearly catholic separation between the two genres. (Even three years after Method Man and Mary J. Blige’s “All I Need” remix, hardcore rap was largely still teeming with misogyny, and R&B was seen as a softer, more feminine pursuit.) <i>Miseducation</i> centered a young woman's point of view, in all her rebellions and vulnerabilities, amid terrain dominated on the hip-hop charts by a certain vision of hypermasculinity. But it also served as an entry point for a mainstream still inclined to denigrate hip-hop’s musicality. \n\nThe album was recorded, in part, at Hope Road in Jamaica, in Bob Marley’s home—a legacy reflected in Hill’s idea for the album’s cover art, which echoes The Wailers’ <i>Rastaman Vibration</i> cover. Yet the DNA of these songs, and a key to their endurance, draws on a classic Motown/Stax sound that showcases Hill’s immaculate vocal approach; the layered “Doo Wop (That Thing)” alone won her two of the five Grammys she took home in 1999, a validation of the freshness of her sound, as well as the way her music spoke to the emergent feminism of the Hip-Hop Generation. \n\nThe vulnerability in <i>Miseducation</i>’s singles is often discussed, but Hill’s concerns, and powers, were multivalent. Once a history major at Columbia University, Hill explored her upbringing in Newark, New Jersey, with a sharp, subtle sociopolitical eye (“Every Ghetto, Every City”) and philosophized on the nature of growing up in a disenfranchised world (“Everything Is Everything”). On the latter song, she benefited from a classic 1970s soul sound with a small band that included jazz bassist Tom Barney and clavinet from Loris Holland, minister of music at the storied Brooklyn Pilgrim Church. The former featured piano from a then-unknown pianist by the name of John Legend. \n\n<i>Miseducation</i> is also proof that pure intention and unflinching emotional truth can be a path to deliverance unto itself. As Hill raps on the politically charged koan “Everything Is Everything”: “My practice extending across the atlas/I begat this.” She was, and remains, a once-in-a-generation talent whose inspiration, and innovation, can be heard through the decades. Artists exhaust long discographies hoping for a cohesive piece of work resonant enough to reshape culture and inscribe its creator into the pantheon; Lauryn Hill did it in one. ",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "Pop",
+          "Music",
+          "R&B/Soul",
+          "Contemporary R&B",
+          "Hip-Hop/Rap",
+          "Alternative Rap",
+          "Neo-Soul"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": false,
+        "isSingle": false,
+        "name": "The Miseducation of Lauryn Hill",
+        "playParams": {
+          "id": "1276760743",
+          "kind": "album"
+        },
+        "recordLabel": "Ruffhouse/Columbia",
+        "releaseDate": "1998-08-19",
+        "trackCount": 16,
+        "upc": "886446727189",
+        "url": "https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Radiohead:OK Computer",
+    "external_id": "1097861387",
     "title": "OK Computer",
     "creator": "Radiohead",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/07/60/ba/0760ba0f-148c-b18f-d0ff-169ee96f3af5/634904078164.png/600x600bb.jpg",
+    "release_year": 1997,
+    "apple_url": "https://music.apple.com/us/album/ok-computer/1097861387",
     "raw_metadata": {
-      "id": "",
+      "id": "1097861387",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1097861387",
       "attributes": {
-        "name": "OK Computer",
         "artistName": "Radiohead",
-        "url": ""
+        "artwork": {
+          "bgColor": "fefeff",
+          "height": 4000,
+          "textColor1": "031623",
+          "textColor2": "332b2c",
+          "textColor3": "35454f",
+          "textColor4": "5b5556",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/07/60/ba/0760ba0f-148c-b18f-d0ff-169ee96f3af5/634904078164.png/{w}x{h}bb.jpg",
+          "width": 4000
+        },
+        "copyright": "℗ 1997 XL Recordings Ltd",
+        "editorialNotes": {
+          "short": "A dozen songs of terror and oblivion and hope.",
+          "standard": "<b>100 Best Albums</b> Few albums so audacious, innovative, and anxious have ever captured the popular imagination like <i>OK Computer</i>, the 1997 Radiohead triumph that not only announced a new frontier of rock exploration, but also articulated budding pre-millennial interest in—and concern over—our technological toys. Here are a dozen songs of terror and oblivion, their singer so alienated by the society spinning around him that he pines to be abducted by aliens so that he may witness “the world as I’d love to see it.” There are car crashes and stolen thoughts, clouds of death and specters of persecution, malevolent robots and a Macintosh LC II that deadpans the new rules for living. It remains a deeply unsettling song cycle that is also deeply magnetic, its reordering of rock ’n’ roll’s sounds with classical ambition making it one of the form’s most radical and necessary statements.\n\nRadiohead had not learned its lessons from “Creep.” After wearing themselves thin promoting their first album, they rode the road even harder for <i>The Bends</i>, playing nearly 200 shows in 1995 alone and prowling the United States in a bus emblazoned with an airbrushed stallion. Thom Yorke crowded spiral-bound notebooks with his unease and expressions of isolation, even as he and his pals moved from one crowded room to another. But Radiohead’s relentless devotion to promotion afforded them complete creative control from a label surprised by their success. They reassembled the dream team that had first worked on <i>The Bends</i>—young engineer turned trusted producer Nigel Godrich and artist Stanley Donwood—and decamped to a palatial estate in the British countryside to wrestle with their worries.\n\nDebates about Radiohead’s motivations and intentions have raged since <i>OK Computer</i>’s release: Were Yorke and the band lashing out at the work that was almost killing them, or were they concerned about what technology would do to our humanity? Both roots, however, lead to the same sense of desperate isolation that <i>OK Computer</i> captures so well. The narrator in “Subterranean Homesick Alien” can no longer smell their surroundings, while the survivor in “Karma Police” can no longer think their thoughts in safety. Love is a final act of desperation during “Exit Music (For a Film),” friendship a cover for raptor-like predation during “Climbing Up the Walls.” The band animates these ideas perfectly, alternately stripping the arrangement until it feels like an icy chill, or adding 16 violins clawing at each other to invoke mental claustrophobia. <i>OK Computer</i> is every lump in your throat, turned into a succession of anthems.\n\nFor all of its dread, <i>OK Computer</i> is ultimately an act of hope, the expression in a belief that our inexorable path of progress does not have to cost us our goodness. Above the hangman riff of “Lucky,” Yorke pines to be pulled back from this abyss’ edge, to be resurrected in love. “It’s gonna be a glorious day,” he sings, and you have to believe it at least <i>could</i> be true. And if there is a remedy to the dizzying pace of, well, everything, it’s simple enough: “Idiot, slow down,” he sings for the last words of closer “The Tourist,” his falsetto newly resolute. “Slow down.” In the decades since <i>OK Computer</i> made Radiohead rock’s new standard-bearers, its grievances—namely, our accelerating isolation—have only mounted. But the answers and the hope it holds linger still.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "Alternative",
+          "Music",
+          "Electronic",
+          "Pop",
+          "Britpop",
+          "Rock",
+          "Adult Alternative"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": false,
+        "isSingle": false,
+        "name": "OK Computer",
+        "playParams": {
+          "id": "1097861387",
+          "kind": "album"
+        },
+        "recordLabel": "XL Recordings",
+        "releaseDate": "1997-05-21",
+        "trackCount": 12,
+        "upc": "634904078164",
+        "url": "https://music.apple.com/us/album/ok-computer/1097861387"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Public Enemy:It Takes a Nation of Millions to Hold Us Back",
+    "external_id": "1440837788",
     "title": "It Takes a Nation of Millions to Hold Us Back",
     "creator": "Public Enemy",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/49/d0/9f49d09b-6842-081e-8cec-67b19a686397/06UMGIM18700.rgb.jpg/600x600bb.jpg",
+    "release_year": 1988,
+    "apple_url": "https://music.apple.com/us/album/it-takes-a-nation-of-millions-to-hold-us-back/1440837788",
     "raw_metadata": {
-      "id": "",
+      "id": "1440837788",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1440837788",
       "attributes": {
-        "name": "It Takes a Nation of Millions to Hold Us Back",
         "artistName": "Public Enemy",
-        "url": ""
+        "artwork": {
+          "bgColor": "3d655a",
+          "height": 3000,
+          "textColor1": "ecf0e4",
+          "textColor2": "d9e5d6",
+          "textColor3": "c9d4c8",
+          "textColor4": "b9ccbd",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/49/d0/9f49d09b-6842-081e-8cec-67b19a686397/06UMGIM18700.rgb.jpg/{w}x{h}bb.jpg",
+          "width": 3000
+        },
+        "contentRating": "explicit",
+        "copyright": "℗ 1988 Def Jam Recordings",
+        "editorialNotes": {
+          "short": "The heralding of hip-hop’s arrival as a radical, political art form.",
+          "standard": "<b>100 Best Albums</b> By 1988, hip-hop was already a decade and a half old. Still, even as certain artists or groups made great strides in breaking through industry barriers and into the mainstream consciousness, the genre remained largely misunderstood by outsiders as something other than the potent and meaningful art form it truly was. Thankfully, Public Enemy was ready, willing, and able to take on that fight. Dogmatic MC Chuck D and rapping hype man Flavor Flav had already delivered a devastating opening salvo with 1987’s unambiguously confrontational debut <i>Yo! Bum Rush the Show</i>, putting Black nationalist politics and imagery at the forefront.\n\nBy comparison, <i>It Takes a Nation of Millions to Hold Us Back</i> felt like a veritable firebombing—a rap blitzkrieg led by a boisterous lyricist with a defiantly militant mindset. That revolutionary energy was palpable on “Bring the Noise” and “Don’t Believe the Hype,” seminal songs with hooks that sounded more like marching orders. Even further down the tracklist, cuts like “Black Steel in the Hour of Chaos” and “Rebel Without a Pause” hit as hard as what came before, the messaging as provocative and righteous as any on the album.\n\nDespite showcasing only Chuck and Flav on the front cover, the album truly represents a group effort. Hank and Keith Shocklee and the rest of The Bomb Squad bolster the vociferous vocals with their radical, sample-spattered productions, both on the hits and standouts like “Cold Lampin’ With Flav” and “Prophets of Rage.” Professor Griff joins the thrash-rap throwdown “She Watch Channel Zero?!” while Terminator X pushes the turntables-as-instrument to new heights on his namesake “To the Edge of Panic,” which showcases his transformer scratch among other then-nascent DJ tricks.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "Hip-Hop/Rap",
+          "Music",
+          "Hardcore Rap",
+          "East Coast Rap"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "It Takes a Nation of Millions to Hold Us Back",
+        "playParams": {
+          "id": "1440837788",
+          "kind": "album"
+        },
+        "recordLabel": "Def Jam Recordings",
+        "releaseDate": "1988-06-28",
+        "trackCount": 16,
+        "upc": "00602547742315",
+        "url": "https://music.apple.com/us/album/it-takes-a-nation-of-millions-to-hold-us-back/1440837788"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:The Clash:London Calling",
+    "external_id": "684811762",
     "title": "London Calling",
     "creator": "The Clash",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/45/d7/17/45d71740-b204-de23-3f9e-f2f823296f1d/886443520721.jpg/600x600bb.jpg",
+    "release_year": 1979,
+    "apple_url": "https://music.apple.com/us/album/london-calling/684811762",
     "raw_metadata": {
-      "id": "",
+      "id": "684811762",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/684811762",
       "attributes": {
-        "name": "London Calling",
         "artistName": "The Clash",
-        "url": ""
+        "artwork": {
+          "bgColor": "d3cec0",
+          "height": 1500,
+          "textColor1": "201e1a",
+          "textColor2": "01331b",
+          "textColor3": "44413b",
+          "textColor4": "2b523c",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/45/d7/17/45d71740-b204-de23-3f9e-f2f823296f1d/886443520721.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "contentRating": "explicit",
+        "copyright": "℗ 2013 Sony Music Entertainment UK Limited",
+        "editorialNotes": {
+          "short": "A boldly experimental double album that was bigger than punk.",
+          "standard": "<b>100 Best Albums</b> Looking back, it’s funny that The Clash started out as a punk band. Not because they weren’t rebellious, but because they always seemed too absorbed by tradition and continuity to deliver the sonic and sociocultural rupture punk promised. If the Ramones’ take on “California Sun” and “Do You Wanna Dance” goofed on the naivete of early-'60s pop-rock, The Clash’s version of “I Fought the Law” was deadly earnest, a declaration of shared values with the rock myths that punk supposedly helped end. If the Sex Pistols had been suicide bombers, The Clash were ascendant generals, adapted to present terrain but romantically steeped in the past.<br />\nAs great as the band’s first two albums had been, they’d mostly worked off a blueprint of punk that by 1979 had started to look a little limited, even retrograde. Installed in a makeshift practice space adjoining an auto body shop, they started rehearsing covers in styles seemingly outside their comfort zone: reggae, soul, rockabilly, pub rock. Soon, whatever allegiance they still had to punk as a social movement was eclipsed by their newfound power as a band unto themselves. In other words, <i>London Calling</i> not only replaced stylistic concision with experimentation (a move pushed even further with 1980’s <i>Sandinista!</i>) but marked the moment when The Clash became bigger than punk.<br />\nWhat was—and is—remarkable about <i>London Calling</i> wasn’t just how much ground it covers, but how comfortably the band stakes their claim to it. They’re heavy (“Death or Glory,” “Hateful”), they’re light (“Revolution Rock,” “Lover’s Rock”), they sing about public struggles (“Clampdown”) and private relationships (Mick Jones’ “Train in Vain”) and advance the old chestnut that our inner lives are always products of our outer realities. Take “Lost in the Supermarket,” the story of how an alienated kid from the suburbs seeks freedom through shopping because shopping is the only model of freedom capitalism gave him. In other words, politics on <i>London Calling</i> aren’t just something that happens at the polls, but at work, at home, when we’re pretty sure nobody’s watching.<br />\nMusically, the punk fascination with American soul and Jamaican reggae (“Train in Vain,” Paul Simonon’s “The Guns of Brixton”) that had developed in part out of a connection between blue-collar English workers and immigrant laborers from the West Indies broadened into something more eclectic: the Tex-Mex/reggae hybrid of “Rudie Can’t Fail,” the bilingual sloganeering of “Spanish Bombs.” What had once been framed as a local struggle—poor white English kids searching for a future in the face of diminishing prospects—became international, the plight of working-class people generally, the ballads of the common man. “El Clash combo,” Joe Strummer sings on “Revolution Rock.” “Paid 15 dollars a day/Weddings, parties, anything/And bongo jazz a specialty.” Anyone forced to run themselves down for money—now or then; black, white, or otherwise—can understand. As for “bongo jazz,” the joke is that the band has probably never played it in their life, but could definitely figure it out if that’s what you were paying for.<br />\n<i>London Calling</i> marked not only a maturation for The Clash, but a crucible for punk in general. A month before it came out, Public Image Ltd.—a band fronted by former Sex Pistols singer John Lydon—released <i>Second Edition</i>, an album that took punk’s general nihilism away from the streets and toward the avant-garde. Hardcore was happening in the States; New Wave—a term essentially used to brand pop or rock music with punk energy for a more mainstream audience—marked an evolutionary step away from politics toward neutral fashionability: punk lite, in a way. And The Clash, operating under the principle that the biggest platform gives one’s message the widest reach, continued to try and reconcile marginal ideals with the fact that they had a UK Top 10 on their hands. A few months after <i>London Calling</i> came out, the band did a brief, explosive tour of the US, at one point stopping at San Francisco’s Warfield theater (a venue that hosted Bob Dylan a few months earlier and would host the Grateful Dead 15 times later in the year). Surveying the room before the show, Strummer was bothered by how close the seats came to the stage. He asked if the house manager could take out the first couple of rows. The manager worried what he would tell customers annoyed that their seats were suddenly gone. He replied, “You tell ’em Joe Strummer took ’em out so they could dance.”",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "Punk",
+          "Music",
+          "Alternative",
+          "Rock",
+          "Hard Rock",
+          "New Wave",
+          "Rock & Roll"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "London Calling",
+        "playParams": {
+          "id": "684811762",
+          "kind": "album"
+        },
+        "recordLabel": "Sony Music UK",
+        "releaseDate": "1979-12-14",
+        "trackCount": 19,
+        "upc": "886443520721",
+        "url": "https://music.apple.com/us/album/london-calling/684811762"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Kanye West:My Beautiful Dark Twisted Fantasy",
-    "title": "My Beautiful Dark Twisted Fantasy",
+    "external_id": "1440621197",
+    "title": "My Beautiful Dark Twisted Fantasy (Deluxe Edition (Explicit))",
     "creator": "Kanye West",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/79/36/4f/79364f95-df81-e427-f989-86ae4df1c3b9/10UMGIM30072.rgb.jpg/600x600bb.jpg",
+    "release_year": 2010,
+    "apple_url": "https://music.apple.com/us/album/my-beautiful-dark-twisted-fantasy-deluxe-edition-explicit/1440621197",
     "raw_metadata": {
-      "id": "",
+      "id": "1440621197",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1440621197",
       "attributes": {
-        "name": "My Beautiful Dark Twisted Fantasy",
         "artistName": "Kanye West",
-        "url": ""
+        "artwork": {
+          "bgColor": "ed2641",
+          "height": 1500,
+          "textColor1": "060504",
+          "textColor2": "010609",
+          "textColor3": "340b11",
+          "textColor4": "300c14",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/79/36/4f/79364f95-df81-e427-f989-86ae4df1c3b9/10UMGIM30072.rgb.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "contentRating": "explicit",
+        "copyright": "℗ 2010 UMG Recordings, Inc.",
+        "editorialNotes": {
+          "short": "Opulent and ambitious, self-aggrandizing and confessional.",
+          "standard": "<b>100 Best Albums</b> The most expensive hip-hop recording ever made, Kanye West's fifth album was a 68-minute LP pulsing with the rapper's singular mix of the self-aggrandizing and the confessional. The album combined the art-rock ambitions of The Beatles, the opulence of Pink Floyd, and the pop-star grandeur of Michael Jackson—but had the personal gravity of a singer-songwriter statement. There's a nine-minute prog-rap opus (\"Runaway\") that came with a 35-minute short film. The album art is by contemporary artist and Warhol associate George Condo. \"All of the Lights\" features an orchestra and vocals from Rihanna, Alicia Keys, and Elton John.\n\nBut despite its ostentatious appearance, the heart of <i>My Beautiful Dark Twisted Fantasy</i> is that of raw honesty, with West's frayed ends of reflection, self-criticism, relationship woes, ruminations on fame, and moments of anger. <i>My Beautiful Dark Twisted Fantasy</i> would forever change the landscape of hip-hop, its genre-crossing boldness, limitless imagination, and sheer sumptuousness of presentation foreshadowing the genre's 2010s turn towards maximalist sounds and arthouse design.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": ["Hip-Hop/Rap", "Music"],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": false,
+        "isSingle": false,
+        "name": "My Beautiful Dark Twisted Fantasy (Deluxe Edition (Explicit))",
+        "playParams": {
+          "id": "1440621197",
+          "kind": "album"
+        },
+        "recordLabel": "Roc-A-Fella",
+        "releaseDate": "2010-01-01",
+        "trackCount": 15,
+        "upc": "00602527572727",
+        "url": "https://music.apple.com/us/album/my-beautiful-dark-twisted-fantasy-deluxe-edition-explicit/1440621197"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:David Bowie:The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
-    "title": "The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
+    "external_id": "1039796877",
+    "title": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
     "creator": "David Bowie",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5f/fa/56/5ffa56c2-ea1f-7a17-6bad-192ff9b6476d/825646124206.jpg/600x600bb.jpg",
+    "release_year": 1972,
+    "apple_url": "https://music.apple.com/us/album/the-rise-and-fall-of-ziggy-stardust-and-the/1039796877",
     "raw_metadata": {
-      "id": "",
+      "id": "1039796877",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1039796877",
       "attributes": {
-        "name": "The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
         "artistName": "David Bowie",
-        "url": ""
+        "artwork": {
+          "bgColor": "151310",
+          "height": 3000,
+          "textColor1": "cbbd59",
+          "textColor2": "dd8952",
+          "textColor3": "a79b4a",
+          "textColor4": "b57145",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5f/fa/56/5ffa56c2-ea1f-7a17-6bad-192ff9b6476d/825646124206.jpg/{w}x{h}bb.jpg",
+          "width": 3000
+        },
+        "copyright": "Under exclusive license to Parlophone Records Limited, ℗ 1972, 2012 Jones/Tintoretto Entertainment Company LLC",
+        "editorialNotes": {
+          "short": "Glam rock as mythmaking, subversive performance art.",
+          "standard": "<b>100 Best Albums</b> When David Bowie stood onstage at the Hammersmith Odeon in full Ziggy Stardust getup and announced his retirement in July 1973, nobody really knew what he meant. Was this Bowie’s retirement, or just Ziggy’s? And what was the difference, anyway? The persona had been laid on so thick, it seemed impossible to peel it away from the artist who invented it. Not to mention, of course, how liberating the persona had been to Bowie’s audience: the drama, the glitter, the possibility of becoming your most fantastic inner self, societal boxes and pre-existing roles be damned. If the crowd screamed in protest, you couldn’t blame them: Ziggy had promised that they weren’t alone—and now he was leaving them.<br />\nThe concept is catchy, but the subversion is in the music: nasty but glamorous (“Moonage Daydream,” “Suffragette City”), theatrical but intimate (“Five Years”), punk before punk (“Hang on to Yourself”), and cabaret for an audience who would’ve never deigned (“Rock ’n’ Roll Suicide”). He’s so exceptional he talks about himself in the third person but so arrogant his fans kill him for it (“Ziggy Stardust”), so deluded he thinks rock ’n’ roll can save the world but so brave he’s willing to die trying (“Star”). “And it was cold, and it rained, so I felt like an actor,” he sings on “Five Years”—an image that captures the moments in life that feel so real they seem fake. The artifice brings him down, but it also sets him free.<br />\nThe album helped loosen binaries around gender, sexuality, performance, and identity. But it also helped broaden the vocabulary of mainstream rock more generally, drawing on concepts from the underground (Bowie barely escaped an interview without talking about Iggy Pop), the art world, kabuki, mime, and film (“Space Oddity” had been written under the influence of <i>2001</i>, <i>Ziggy Stardust</i> under <i>A Clockwork Orange</i>). Calling him flighty or inauthentic missed the point: Like Andy Warhol, Bowie treated his art in part as a synthesis of his interests. For all the ways it was radical at the time, <i>Ziggy</i> also pointed to a referential, hyperlinked future we’re all familiar with—curation as creation.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "Rock",
+          "Music",
+          "Pop",
+          "Pop/Rock",
+          "Arena Rock",
+          "Hard Rock",
+          "Alternative",
+          "Punk",
+          "Glam Rock",
+          "Prog-Rock/Art Rock",
+          "Singer/Songwriter"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
+        "playParams": {
+          "id": "1039796877",
+          "kind": "album"
+        },
+        "recordLabel": "Parlophone UK",
+        "releaseDate": "1972-06-16",
+        "trackCount": 11,
+        "upc": "825646124206",
+        "url": "https://music.apple.com/us/album/the-rise-and-fall-of-ziggy-stardust-and-the/1039796877"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Amy Winehouse:Back to Black",
+    "external_id": "1422677780",
     "title": "Back to Black",
     "creator": "Amy Winehouse",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5a/72/3f/5a723fec-965d-3483-89f8-d66b79f88419/15UMGIM24224.rgb.jpg/600x600bb.jpg",
+    "release_year": 2006,
+    "apple_url": "https://music.apple.com/us/album/back-to-black/1422677780",
     "raw_metadata": {
-      "id": "",
+      "id": "1422677780",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1422677780",
       "attributes": {
-        "name": "Back to Black",
         "artistName": "Amy Winehouse",
-        "url": ""
+        "artwork": {
+          "bgColor": "0b0b0d",
+          "height": 1500,
+          "textColor1": "dbb698",
+          "textColor2": "dfa487",
+          "textColor3": "b1937c",
+          "textColor4": "b4866f",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5a/72/3f/5a723fec-965d-3483-89f8-d66b79f88419/15UMGIM24224.rgb.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "contentRating": "explicit",
+        "copyright": "℗ 2006 Island Records, a division of Universal Music Operations Limited",
+        "editorialNotes": {
+          "short": "Her blend of brassy retro-soul and brash lyrics is inimitable and immortal.",
+          "standard": "<b>100 Best Albums</b> Producer Mark Ronson remembers when Amy Winehouse came in with the lyrics for “Back to Black.” They were at a studio in New York in early 2006, their first day working together. Ronson had given her a portable CD player with the song’s piano track, and Winehouse disappeared into the back for about an hour to write. What she reemerged with was masterful: bleak, funny, tough, hopelessly romantic. The chorus, though, kept tripping him up because it didn’t rhyme: “We only said goodbye with words, I died a hundred times.” He asked her to change it, but she just gave him a blank look: That’s just how it came out, she didn’t know how to <i>change</i> it.\n\nFor all her brashness, what makes <i>Back to Black</i> so moving is the sense that Winehouse is constantly trying to punch through her pain—not to suppress it exactly, but to wrap it in enough barbed wire that nobody could quite reach its core. The appeal to soul music is obvious: the Motown horns (“Rehab,” “Tears Dry on Their Own”), the girl-group romance (“Back to Black”), the organic quality of the arrangements (“You Know I’m No Good”)—much of it courtesy of Brooklyn outfit The Dap-Kings. \n\nBut Winehouse’s presentation and otherworldly, timeless vocals still make her music feel different—not so much an attempt to recreate the past as to honor the music she loved while still being true to the trash-talking, self-effacing millennial she was. Years before the next generation learned to temper their misery with sarcasm, memes, and deadpan fatalism, we had Amy Winehouse, fluttering around words so crass you could barely believe she was singing them at all, let alone with a horn section. The sound of <i>Back to Black</i> might appeal to retro-soul fans and jazz classicists, but the attitude is closer to rap. Yes, she was funny. But she wasn’t kidding. ",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": [
+          "R&B/Soul",
+          "Music",
+          "Rock",
+          "Contemporary R&B",
+          "Neo-Soul"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "Back to Black",
+        "playParams": {
+          "id": "1422677780",
+          "kind": "album"
+        },
+        "recordLabel": "Universal-Island Records Ltd.",
+        "releaseDate": "2006-10-27",
+        "trackCount": 11,
+        "upc": "00602547377876",
+        "url": "https://music.apple.com/us/album/back-to-black/1422677780"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:The Rolling Stones:Exile on Main St.",
-    "title": "Exile on Main St.",
+    "external_id": "1440872228",
+    "title": "Exile On Main Street (2010 Remaster)",
     "creator": "The Rolling Stones",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b6/7b/df/b67bdff8-4e30-d46d-e869-fc0f38462f4c/08UMGIM15728.rgb.jpg/600x600bb.jpg",
+    "release_year": 1972,
+    "apple_url": "https://music.apple.com/us/album/exile-on-main-street-2010-remaster/1440872228",
     "raw_metadata": {
-      "id": "",
+      "id": "1440872228",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1440872228",
       "attributes": {
-        "name": "Exile on Main St.",
         "artistName": "The Rolling Stones",
-        "url": ""
+        "artwork": {
+          "bgColor": "5e5f57",
+          "height": 1662,
+          "textColor1": "f4eeea",
+          "textColor2": "fae8e6",
+          "textColor3": "d6d1cc",
+          "textColor4": "dbcdc9",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b6/7b/df/b67bdff8-4e30-d46d-e869-fc0f38462f4c/08UMGIM15728.rgb.jpg/{w}x{h}bb.jpg",
+          "width": 1538
+        },
+        "contentRating": "explicit",
+        "copyright": "℗ 2012 Promotone B.V., under exclusive licence to Universal International Music B.V.",
+        "editorialNotes": {
+          "short": "The Stones’ shambolic, decadent mystique in its ultimate form",
+          "standard": "<b>100 Best Albums</b> More than songs or performances, 1972’s <i>Exile on Main St.</i> was about mood. Listen close: Can you hear the young gods sweating it out in the basement of a French mansion overlooking the Mediterranean? Surrounded by junkies and hangers-on? Eating lobster and stuffed tomatoes in the afternoon and working all night? Never had the band managed to translate their myth—the sloppy, redemptive glory of rock ’n’ roll—so faithfully into sound. A great party album, yes, and a party unto itself. But <i>Exile</i> was also the closest The Rolling Stones ever got to something truly avant-garde, an album whose perceived mistakes—the muddy mix; the sloppy, dislocated performances—conjured a feeling something more correct would have wiped away.<br />\nEven in its looser moments, 1971’s <i>Sticky Fingers</i> had sounded professional—raw music gussied up for the main stage. <i>Exile</i>, by contrast, wasn’t just born in the basement, it evoked one: a place of clutter and darkness, strange things forgotten and unfinished. For every “Tumbling Dice” or “Torn and Frayed“—two of the album’s more coherent moments—there was an “I Just Want to See His Face” or “Let It Loose,” tracks that functioned less as finished thoughts than open-ended suggestions, seeds for new growth. And the blues that had once served as the band’s shorthand for earthly hardships and desires now sounded mysterious and arcane—less the entertainment of juke joints than the vernacular of some underground society.<br />\nThe story of <i>Exile</i> is probably oversold—after all, they only spent part of the time in the basement. But the frame remains useful. “I hear you talking when I’m on the street,” Mick slurs on the opening line of “Rocks Off.” “Your mouth don't move, but I can hear you speak.” For the next hour, the paradoxes keep coming: light in darkness, clarity in chaos. For years, the band had described confusion—with <i>Exile</i>, they embodied it.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": ["Rock", "Music"],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "Exile On Main Street (2010 Remaster)",
+        "playParams": {
+          "id": "1440872228",
+          "kind": "album"
+        },
+        "recordLabel": "Polydor Records",
+        "releaseDate": "1972-05-12",
+        "trackCount": 18,
+        "upc": "00602537190775",
+        "url": "https://music.apple.com/us/album/exile-on-main-street-2010-remaster/1440872228"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Beyoncé:Lemonade",
+    "external_id": "1460430561",
     "title": "Lemonade",
     "creator": "Beyoncé",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/db/25/a1/db25a1c0-8a4a-3b4d-226d-7c7704dc92da/886447680711.jpg/600x600bb.jpg",
+    "release_year": 2016,
+    "apple_url": "https://music.apple.com/us/album/lemonade/1460430561",
     "raw_metadata": {
-      "id": "",
+      "id": "1460430561",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1460430561",
       "attributes": {
-        "name": "Lemonade",
         "artistName": "Beyoncé",
-        "url": ""
+        "artwork": {
+          "bgColor": "182122",
+          "height": 1500,
+          "textColor1": "cddcb5",
+          "textColor2": "96d0c1",
+          "textColor3": "a9b797",
+          "textColor4": "7dada1",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/db/25/a1/db25a1c0-8a4a-3b4d-226d-7c7704dc92da/886447680711.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "contentRating": "explicit",
+        "copyright": "℗ 2019 Parkwood Entertainment LLC, under exclusive license to Columbia Records, a Division of Sony Music Entertainment",
+        "editorialNotes": {
+          "short": "Sometimes even Beyoncé has to summon her inner Beyoncé.",
+          "standard": "<b>100 Best Albums</b> There’s one moment critical to understanding the emotional and cultural heft of <i>Lemonade</i>, Beyoncé’s genre-obliterating blockbuster sixth album—and it arrives at the end of “Freedom,” a storming empowerment anthem that samples a civil-rights-era prison song and features Kendrick Lamar. An elderly woman’s voice cuts in: “I had my ups and downs, but I always find the inner strength to pull myself up,” she says. “I was served lemons, but I made lemonade.”\n\nThe speech—made by her husband JAŸ-Z’s grandmother Hattie White on her 90th birthday in 2015—reportedly inspired the concept behind this radical project, which arrived with an accompanying film as well as words by Somali British poet Warsan Shire. Both the album and its visual companion are deeply tied to Beyoncé’s identity and narrative (her womanhood, her Blackness, her marriage) and make for her most outwardly revealing work to date. \n\nThe details, of course, are what make it so relatable, what make each song sting. The project is furious, defiant, anguished, vulnerable, experimental, muscular, triumphant, humorous, and brave—a vivid personal statement, released without warning in a time of public scrutiny and private suffering. It is also astonishingly tough. Through tears, even Beyoncé has to summon her inner Beyoncé, roaring, “I’ma keep running ’cause a winner don’t quit on themselves.” This panoramic strength—lyrical, vocal, instrumental, and personal—nudged her public image from mere legend to something closer to real-life superhero.\n\nEvery second of <i>Lemonade</i> deserves to be studied and celebrated (the self-punishment in “Sorry,” the politics in “Formation,” the creative enhancements from collaborators like James Blake and Karen O), but the song that aims the highest musically may be “Don’t Hurt Yourself”—a Zeppelin-sampling psych-rock duet with Jack White. “This is your final warning,” she says in a moment of unnerving calm. “If you try this shit again/You gon’ lose your wife.” In support, White offers a word to the wise: “Love God herself.”",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": ["Pop", "Music"],
+        "isCompilation": false,
+        "isComplete": false,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "Lemonade",
+        "playParams": {
+          "id": "1460430561",
+          "kind": "album"
+        },
+        "recordLabel": "Parkwood Entertainment/Columbia",
+        "releaseDate": "2016-04-23",
+        "trackCount": 13,
+        "upc": "886447680711",
+        "url": "https://music.apple.com/us/album/lemonade/1460430561"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Kendrick Lamar:To Pimp a Butterfly",
+    "external_id": "1440828886",
     "title": "To Pimp a Butterfly",
     "creator": "Kendrick Lamar",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0d/ae/61/0dae6140-d4af-d0df-eae0-3c92eb392a33/15UMGIM11922.rgb.jpg/600x600bb.jpg",
+    "release_year": 2015,
+    "apple_url": "https://music.apple.com/us/album/to-pimp-a-butterfly/1440828886",
     "raw_metadata": {
-      "id": "",
+      "id": "1440828886",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/1440828886",
       "attributes": {
-        "name": "To Pimp a Butterfly",
         "artistName": "Kendrick Lamar",
-        "url": ""
+        "artwork": {
+          "bgColor": "bebdbc",
+          "height": 1500,
+          "textColor1": "131212",
+          "textColor2": "181716",
+          "textColor3": "353434",
+          "textColor4": "393837",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0d/ae/61/0dae6140-d4af-d0df-eae0-3c92eb392a33/15UMGIM11922.rgb.jpg/{w}x{h}bb.jpg",
+          "width": 1500
+        },
+        "contentRating": "explicit",
+        "copyright": "℗ 2015 Aftermath/Interscope (Top Dawg Entertainment)",
+        "editorialNotes": {
+          "short": "Afrofuturism and jazz-funk aesthetics brought hip-hop to a cosmic plane.",
+          "standard": "Thanks to multiple hit singles—and no shortage of critical acclaim—2012’s <i>good kid, m.A.A.d city</i> propelled Kendrick Lamar into the hip-hop mainstream. His 2015 follow-up, <i>To Pimp a Butterfly</i>, served as a raised-fist rebuke to anyone who thought they had this Compton-born rapper figured out. Intertwining Afrocentric and Afrofuturist motifs with poetically personal themes and jazz-funk aesthetics, <i>To Pimp A Butterfly</i> expands beyond the gangsta rap preconceptions foisted upon Lamar’s earlier works.\n\nEven from the album’s first few seconds—which feature the sound of crackling vinyl and a faded Boris Gardiner soul sample—it’s clear <i>To Pimp a Butterfly</i> operates on an altogether different cosmic plane than its decidedly more commercial predecessor. The album’s Flying Lotus-produced opening track, “Wesley’s Theory,” includes a spoken-word invocation from musician Josef Leimberg and an appearance by Parliament-Funkadelic legend George Clinton—names that give <i>To Pimp a Butterfly</i> added atomic weight. Yet Lamar’s lustful and fantastical verses, which are as audacious as the squirmy Thundercat basslines underneath, never get lost in an album packed with huge names. Throughout <i>To Pimp a Butterfly</i>, Lamar goes beyond hip-hop success tropes: On “King Kunta,” he explores his newfound fame, alternating between anxiety and big-stepping braggadocio. On “The Blacker the Berry,” meanwhile, Lamar pointedly explores and expounds upon identity and racial dynamics, all the while reaching for a reckoning. And while “Alright” would become one of the rapper’s best-known tracks, it’s couched in harsh realities, and features an anthemic refrain delivered in a knowing, weary rasp that belies Lamar’s young age. He’s only 27, and yet he’s already seen too much.\n\nThe cast assembled for this massive effort demonstrates not only Lamar’s reach, but also his vast vision. Producers Terrace Martin and Sounwave, both veterans of <i>good kid, m.A.A.d city</i>, are among the many names to work behind-the-boards here. But the album also includes turns from everyone from Snoop Dogg to SZA to Ambrose Akinmusire to Kamasi Washington—an intergenerational reunion of a musical diaspora. Their contributions—as well as the contributions of more than a dozen other players—give <i>To Pimp a Butterfly</i> a remarkable range: The contemplations of “Institutionalized” benefit greatly from guest vocalists Bilal and Anna Wise, as do the hood parables of “How Much A Dollar Cost,” which features James Fauntleroy and Ronald Isley. Meanwhile, Robert Glasper’s frenetic piano on “For Free? (Interlude)” and Pete Rock’s nimble scratches on “Complexion (A Zulu Love)” give <i>To Pimp a Butterfly</i> added energy."
+        },
+        "genreNames": [
+          "Hip-Hop/Rap",
+          "Music",
+          "Hardcore Rap",
+          "West Coast Rap",
+          "Gangsta Rap",
+          "Rap"
+        ],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "To Pimp a Butterfly",
+        "playParams": {
+          "id": "1440828886",
+          "kind": "album"
+        },
+        "recordLabel": "Aftermath",
+        "releaseDate": "2015-03-15",
+        "trackCount": 16,
+        "upc": "00602547276636",
+        "url": "https://music.apple.com/us/album/to-pimp-a-butterfly/1440828886"
       }
     }
   },
   {
     "type": "album",
-    "external_id": "unenriched:Aretha Franklin:I Never Loved a Man the Way I Love You",
+    "external_id": "937107826",
     "title": "I Never Loved a Man the Way I Love You",
     "creator": "Aretha Franklin",
-    "artwork_url": null,
-    "release_year": null,
-    "apple_url": null,
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d1/31/ee/d131eec4-614c-d661-b580-3dc32b8547e8/603497896622.jpg/600x600bb.jpg",
+    "release_year": 1967,
+    "apple_url": "https://music.apple.com/us/album/i-never-loved-a-man-the-way-i-love-you/937107826",
     "raw_metadata": {
-      "id": "",
+      "id": "937107826",
+      "type": "albums",
+      "href": "/v1/catalog/us/albums/937107826",
       "attributes": {
-        "name": "I Never Loved a Man the Way I Love You",
         "artistName": "Aretha Franklin",
-        "url": ""
+        "artwork": {
+          "bgColor": "cec5d4",
+          "height": 4000,
+          "textColor1": "030201",
+          "textColor2": "322a2a",
+          "textColor3": "2b292b",
+          "textColor4": "51494c",
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d1/31/ee/d131eec4-614c-d661-b580-3dc32b8547e8/603497896622.jpg/{w}x{h}bb.jpg",
+          "width": 4000
+        },
+        "copyright": "℗ 1967 Atlantic Records. Marketed by Rhino Entertainment Company, a Warner Music Group Company.",
+        "editorialNotes": {
+          "short": "The Queen of Soul gets the R-E-S-P-E-C-T she deserves.",
+          "standard": "<b>100 Best Albums</b> When Aretha Franklin made the decision to pursue a career in secular music after getting her start singing gospel, she knew she wanted to be a crossover artist—one who could follow in the footsteps of entertainers like Sarah Vaughan and Dinah Washington. She even took the step of signing with Columbia Records’ John Hammond, the talent guru who’d discovered Bob Dylan—and who would later sign Bruce Springsteen.\n\nFranklin would release nine albums with Columbia—an entire career’s worth—before moving to Atlantic Records and working with producer Jerry Wexler, the legendary record man who, alongside his partner Ahmet Ertegun, signed and recorded the greatest R&B artists of the 1950s and 1960s. <i>I Never Loved a Man the Way I Love You</i>, released in 1967, is the first effort in this partnership.\n\nThe album opens with Franklin’s take on Otis Redding’s “Respect”—a version so definitive and dynamic, Redding had no choice but to acknowledge its superiority. “This girl has taken that song from me,” he told Wexler. “Ain’t no longer my song. From now on, it belongs to her.” That’s high praise indeed, considering both the source, and the fact that Otis’ version itself is running on premium octane. But Franklin had come to Wexler with her arrangement of “Respect” already prepared. And she’d come up with arrangements or scratch vocals for many of the record’s other key numbers, many of which she had co-written, including such highlights as “Dr. Feelgood,” “Baby, Baby, Baby,” and “Don’t Let Me Lose This Dream.”\n\nWexler, for his part, introduced Franklin to the Swampers, the house band at FAME Studios in Muscle Shoals, Alabama. The connection between Franklin and the Swampers was electric—“They understand me,” she would tell Wexler—and led to “Do Right Woman, Do Right Man,” yet another <i>I Never Loved a Man the Way I Love You</i> track that would go on to become a classic.\n\nAfter finishing up her sessions in Alabama, Franklin completed work on the album in New York City, where she was joined by her sisters, Carolyn and Erma, on backup vocals. Wexler’s production would turn out to be the right sound for the right artist at the right time, with the single release of “I Never Loved a Man the Way I Love You” climbing both the R&B and pop charts. After years in the music industry, Franklin finally had her first smash hit.",
+          "tagline": "Featured in 100 Best Albums"
+        },
+        "genreNames": ["R&B/Soul", "Music", "Rock", "Soul"],
+        "isCompilation": false,
+        "isComplete": true,
+        "isMasteredForItunes": true,
+        "isSingle": false,
+        "name": "I Never Loved a Man the Way I Love You",
+        "playParams": {
+          "id": "937107826",
+          "kind": "album"
+        },
+        "recordLabel": "Rhino Atlantic",
+        "releaseDate": "1967-03-10",
+        "trackCount": 11,
+        "upc": "603497896622",
+        "url": "https://music.apple.com/us/album/i-never-loved-a-man-the-way-i-love-you/937107826"
       }
     }
   }

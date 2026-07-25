@@ -10,7 +10,8 @@
     "lint:fix": "biome check --write .",
     "format": "biome format --write .",
     "seed": "tsx supabase/seed/seed-runner.ts",
-    "seed:generate": "tsx supabase/seed/generate-seed-data.ts"
+    "seed:generate": "tsx supabase/seed/generate-seed-data.ts",
+    "seed:reset": "tsx supabase/seed/reset-seed-tables.ts"
   },
   "dependencies": {
     "@serwist/next": "^9.5.12",

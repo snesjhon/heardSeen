@@ -18,7 +18,22 @@ Two-step pipeline:
    real credentials exist in this environment. Re-run once you've added yours.
 
 2. **`pnpm run seed`** — upserts `data/*.json` into Supabase (`lists`, `media_items`, `list_items`)
-   via the service-role client. Idempotent — safe to re-run after regenerating.
+   via the service-role client. Safe to re-run *as long as each media_item's `external_id` hasn't
+   changed* since the last run — the upsert conflict key is `(type, external_id)`, so a changed id
+   creates a new row instead of replacing the old one.
+
+If you've previously seeded placeholder data (no credentials yet) and are now reloading with real
+Apple Music/TMDB data, `external_id` changes (placeholder ids look like `unenriched:...`, real ones
+are the actual catalog ids) — upserting won't clean up the old placeholder rows. Run
+**`pnpm run seed:reset`** first to wipe `media_items`/`lists` (cascades to `list_items` and any
+`diary_entries` referencing them — fine pre-launch, not something to run once real user data
+exists), then `seed:generate` and `seed` again:
+
+```bash
+pnpm run seed:reset
+pnpm run seed:generate
+pnpm run seed
+```
 
 ## Current scope: samples, not the full lists
 
