@@ -5,8 +5,9 @@
 A personal diary of albums heard and movies seen, browsed through curated lists (e.g. *1001 Albums
 You Must Hear Before You Die*, *Rolling Stone's 500 Greatest Albums*) rather than free-form logging.
 Users log entries (date + rating + notes) against items in a list and see per-list completion
-progress. Tapping an album/movie opens it in the native Apple Music / Apple TV app via a stored
-deep link. Ships as a responsive, installable PWA — one codebase for iPhone, iPad, and web.
+progress. Tapping an album opens the native Apple Music app via a stored deep link; tapping a movie
+opens its TMDB page (which links onward to Apple TV/other providers when available). Ships as a
+responsive, installable PWA — one codebase for iPhone, iPad, and web.
 
 ## Key decisions and why
 
@@ -29,9 +30,10 @@ deep link. Ships as a responsive, installable PWA — one codebase for iPhone, i
   every title tested (Jaws, Casablanca, Toy Story, Interstellar, The Matrix, Inception) — Apple has
   emptied that index as part of its shift to the Apple TV app / tv.apple.com, which has no public
   developer API. TMDB (free API key) is the reliable alternative for title/director/poster/year.
-  Since there's no official mapping from a TMDB id to an Apple TV catalog id, the movie deep link is
-  a best-effort `tv.apple.com/search?term=...` link rather than an exact per-title page — flagged
-  clearly in code and in `supabase/seed/README.md`.
+  Since there's no official mapping from a TMDB id to an Apple TV catalog id, the movie deep link
+  points at the title's TMDB page (`themoviedb.org/movie/{id}`) rather than tv.apple.com directly —
+  TMDB's "Where to Watch" section links onward to Apple TV (via JustWatch) when available, which a
+  constructed tv.apple.com search guess couldn't do reliably. See `src/lib/tmdb/movies.ts`.
 - **`diary_entries` has no unique constraint on `(user_id, media_item_id)`.** Re-watches/re-listens
   are allowed (Letterboxd-style) — "has this been logged" is `EXISTS(...)`, not a 1:1 lookup.
 - **Per-list progress is a Postgres view (`list_progress`), not a synced table.** Computed by joining

@@ -84,7 +84,7 @@ async function enrichMovies(
       creator: "Unknown",
       artwork_url: null,
       release_year: null,
-      apple_url: `https://tv.apple.com/search?term=${encodeURIComponent(source.title)}`,
+      apple_url: `https://www.themoviedb.org/search?query=${encodeURIComponent(source.title)}`,
       raw_metadata: { id: -1, title: source.title, director: null },
     }));
   }

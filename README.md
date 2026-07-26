@@ -3,7 +3,8 @@
 A personal diary of albums heard and movies seen — driven by curated lists like
 *1001 Albums You Must Hear Before You Die* and *Rolling Stone's 500 Greatest Albums*, not free-form
 logging. Browse a list, mark an item off with a rating/notes/date, watch your progress per list.
-Tapping an item opens it in the native Apple Music or Apple TV app.
+Tapping an album opens it in the native Apple Music app (universal link); tapping a movie opens
+its TMDB page, which links onward to Apple TV/other providers when available.
 
 Ships as a responsive, installable PWA — one codebase for iPhone, iPad, and web.
 

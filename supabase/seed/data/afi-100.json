@@ -6,7 +6,7 @@
     "creator": "Orson Welles",
     "artwork_url": "https://image.tmdb.org/t/p/w500/sav0jxhqiH0bPr2vZFU0Kjt2nZL.jpg",
     "release_year": 1941,
-    "apple_url": "https://tv.apple.com/search?term=Citizen%20Kane",
+    "apple_url": "https://www.themoviedb.org/movie/15",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/ruF3Lmd4A8MHbnEBE6lxPMbsHGL.jpg",
@@ -16,13 +16,13 @@
       "original_language": "en",
       "original_title": "Citizen Kane",
       "overview": "Newspaper magnate Charles Foster Kane is taken from his mother as a boy and made the ward of a rich industrialist. As a result, every well-meaning, tyrannical or self-destructive move he makes for the rest of his life appears in some way to be a reaction to that deeply wounding event.",
-      "popularity": 5.7981,
+      "popularity": 7.5678,
       "poster_path": "/sav0jxhqiH0bPr2vZFU0Kjt2nZL.jpg",
       "release_date": "1941-04-17",
       "softcore": false,
       "video": false,
       "vote_average": 7.968,
-      "vote_count": 6119,
+      "vote_count": 6120,
       "director": "Orson Welles"
     }
   },
@@ -33,7 +33,7 @@
     "creator": "Francis Ford Coppola",
     "artwork_url": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
     "release_year": 1972,
-    "apple_url": "https://tv.apple.com/search?term=The%20Godfather",
+    "apple_url": "https://www.themoviedb.org/movie/238",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/tSPT36ZKlP2WVHJLM4cQPLSzv3b.jpg",
@@ -43,13 +43,13 @@
       "original_language": "en",
       "original_title": "The Godfather",
       "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
-      "popularity": 42.0082,
+      "popularity": 43.2803,
       "poster_path": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
       "release_date": "1972-03-14",
       "softcore": false,
       "video": false,
       "vote_average": 8.687,
-      "vote_count": 23209,
+      "vote_count": 23211,
       "director": "Francis Ford Coppola"
     }
   },
@@ -60,7 +60,7 @@
     "creator": "Michael Curtiz",
     "artwork_url": "https://image.tmdb.org/t/p/w500/lGCEKlJo2CnWydQj7aamY7s1S7Q.jpg",
     "release_year": 1943,
-    "apple_url": "https://tv.apple.com/search?term=Casablanca",
+    "apple_url": "https://www.themoviedb.org/movie/289",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/87wqeMeUeMRLjsE1IWNKJcPlpuC.jpg",
@@ -70,13 +70,13 @@
       "original_language": "en",
       "original_title": "Casablanca",
       "overview": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
-      "popularity": 10.2602,
+      "popularity": 10.9162,
       "poster_path": "/lGCEKlJo2CnWydQj7aamY7s1S7Q.jpg",
       "release_date": "1943-01-15",
       "softcore": false,
       "video": false,
       "vote_average": 8.138,
-      "vote_count": 6117,
+      "vote_count": 6118,
       "director": "Michael Curtiz"
     }
   },
@@ -87,7 +87,7 @@
     "creator": "Martin Scorsese",
     "artwork_url": "https://image.tmdb.org/t/p/w500/1WV7WlTS8LI1L5NkCgjWT9GSW3O.jpg",
     "release_year": 1980,
-    "apple_url": "https://tv.apple.com/search?term=Raging%20Bull",
+    "apple_url": "https://www.themoviedb.org/movie/1578",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/tvNuhRlpRozDgsX1zR9gQ2aHv1X.jpg",
@@ -97,13 +97,13 @@
       "original_language": "en",
       "original_title": "Raging Bull",
       "overview": "The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.",
-      "popularity": 5.6664,
+      "popularity": 6.3377,
       "poster_path": "/1WV7WlTS8LI1L5NkCgjWT9GSW3O.jpg",
       "release_date": "1980-11-14",
       "softcore": false,
       "video": false,
       "vote_average": 7.899,
-      "vote_count": 4815,
+      "vote_count": 4816,
       "director": "Martin Scorsese"
     }
   },
@@ -111,10 +111,10 @@
     "type": "movie",
     "external_id": "872",
     "title": "Singin' in the Rain",
-    "creator": "Stanley Donen",
+    "creator": "Gene Kelly",
     "artwork_url": "https://image.tmdb.org/t/p/w500/w03EiJVHP8Un77boQeE7hg9DVdU.jpg",
     "release_year": 1952,
-    "apple_url": "https://tv.apple.com/search?term=Singin'%20in%20the%20Rain",
+    "apple_url": "https://www.themoviedb.org/movie/872",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/6qOyw4yfzbzTp5YsCX26C28Do0S.jpg",
@@ -124,14 +124,14 @@
       "original_language": "en",
       "original_title": "Singin' in the Rain",
       "overview": "In 1927 Hollywood, a silent film star falls for a chorus girl just as he and his paranoid screen partner struggle to make the difficult transition to talking pictures.",
-      "popularity": 6.6905,
+      "popularity": 6.9541,
       "poster_path": "/w03EiJVHP8Un77boQeE7hg9DVdU.jpg",
       "release_date": "1952-04-10",
       "softcore": false,
       "video": false,
-      "vote_average": 8.1,
-      "vote_count": 3549,
-      "director": "Stanley Donen"
+      "vote_average": 8.132,
+      "vote_count": 3550,
+      "director": "Gene Kelly"
     }
   },
   {
@@ -141,7 +141,7 @@
     "creator": "Victor Fleming",
     "artwork_url": "https://image.tmdb.org/t/p/w500/lNz2Ow0wGCAvzckW7EOjE03KcYv.jpg",
     "release_year": 1939,
-    "apple_url": "https://tv.apple.com/search?term=Gone%20with%20the%20Wind",
+    "apple_url": "https://www.themoviedb.org/movie/770",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/4FHcxMtVruMr7ltU2cItWssLjTP.jpg",
@@ -157,7 +157,7 @@
       "softcore": false,
       "video": false,
       "vote_average": 7.908,
-      "vote_count": 4419,
+      "vote_count": 4421,
       "director": "Victor Fleming"
     }
   },
@@ -168,7 +168,7 @@
     "creator": "David Lean",
     "artwork_url": "https://image.tmdb.org/t/p/w500/AiAm0EtDvyGqNpVoieRw4u65vD1.jpg",
     "release_year": 1962,
-    "apple_url": "https://tv.apple.com/search?term=Lawrence%20of%20Arabia",
+    "apple_url": "https://www.themoviedb.org/movie/947",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/z30x999Uku15xcFbe5s3hLvQPDl.jpg",
@@ -184,7 +184,7 @@
       "softcore": false,
       "video": false,
       "vote_average": 8,
-      "vote_count": 3484,
+      "vote_count": 3485,
       "director": "David Lean"
     }
   },
@@ -195,7 +195,7 @@
     "creator": "Steven Spielberg",
     "artwork_url": "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
     "release_year": 1993,
-    "apple_url": "https://tv.apple.com/search?term=Schindler's%20List",
+    "apple_url": "https://www.themoviedb.org/movie/424",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
@@ -205,13 +205,13 @@
       "original_language": "en",
       "original_title": "Schindler's List",
       "overview": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
-      "popularity": 28.8342,
+      "popularity": 30.223,
       "poster_path": "/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
       "release_date": "1993-12-15",
       "softcore": false,
       "video": false,
       "vote_average": 8.57,
-      "vote_count": 17638,
+      "vote_count": 17640,
       "director": "Steven Spielberg"
     }
   },
@@ -222,7 +222,7 @@
     "creator": "Alfred Hitchcock",
     "artwork_url": "https://image.tmdb.org/t/p/w500/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg",
     "release_year": 1958,
-    "apple_url": "https://tv.apple.com/search?term=Vertigo",
+    "apple_url": "https://www.themoviedb.org/movie/426",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/rtVwkTqllcmyY4TVOycgVBHppWf.jpg",
@@ -232,13 +232,13 @@
       "original_language": "en",
       "original_title": "Vertigo",
       "overview": "A retired San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her.",
-      "popularity": 7.5692,
+      "popularity": 8.3282,
       "poster_path": "/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg",
       "release_date": "1958-05-09",
       "softcore": false,
       "video": false,
-      "vote_average": 8.1,
-      "vote_count": 6395,
+      "vote_average": 8.136,
+      "vote_count": 6397,
       "director": "Alfred Hitchcock"
     }
   },
@@ -249,7 +249,7 @@
     "creator": "Victor Fleming",
     "artwork_url": "https://image.tmdb.org/t/p/w500/uCC3j4pV9eOZwzDUWp2ilbcTf1f.jpg",
     "release_year": 1939,
-    "apple_url": "https://tv.apple.com/search?term=The%20Wizard%20of%20Oz",
+    "apple_url": "https://www.themoviedb.org/movie/630",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/g1OvTd1eF346vmx8qsJnjaiooZ6.jpg",
@@ -259,13 +259,13 @@
       "original_language": "en",
       "original_title": "The Wizard of Oz",
       "overview": "Young Dorothy finds herself in a magical world where she makes friends with a lion, a scarecrow and a tin man as they make their way along the yellow brick road to talk with the Wizard and ask for the things they miss most in their lives. The Wicked Witch of the West is the only thing that could stop them.",
-      "popularity": 12.8756,
+      "popularity": 13.274,
       "poster_path": "/uCC3j4pV9eOZwzDUWp2ilbcTf1f.jpg",
       "release_date": "1939-08-21",
       "softcore": false,
       "video": false,
-      "vote_average": 7.584,
-      "vote_count": 6167,
+      "vote_average": 7.6,
+      "vote_count": 6168,
       "director": "Victor Fleming"
     }
   },
@@ -276,7 +276,7 @@
     "creator": "Jamie Lloyd",
     "artwork_url": "https://image.tmdb.org/t/p/w500/rpueOhaaHsj70kG0a5M2UbktFz3.jpg",
     "release_year": 2024,
-    "apple_url": "https://tv.apple.com/search?term=Sunset%20Blvd",
+    "apple_url": "https://www.themoviedb.org/movie/1724460",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": null,
@@ -286,7 +286,7 @@
       "original_language": "en",
       "original_title": "Sunset Blvd",
       "overview": "Haunted by her memories and dreams, movie star Norma Desmond yearns to return to the big screen. A struggling screenwriter who can’t sell his scripts to the Hollywood studios may be her only hope, until their dangerous and captivating relationship leads to disaster.",
-      "popularity": 1.2506,
+      "popularity": 1.2699,
       "poster_path": "/rpueOhaaHsj70kG0a5M2UbktFz3.jpg",
       "release_date": "2024-10-20",
       "softcore": false,
@@ -303,7 +303,7 @@
     "creator": "Stanley Kubrick",
     "artwork_url": "https://image.tmdb.org/t/p/w500/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
     "release_year": 1968,
-    "apple_url": "https://tv.apple.com/search?term=2001%3A%20A%20Space%20Odyssey",
+    "apple_url": "https://www.themoviedb.org/movie/62",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
@@ -313,13 +313,13 @@
       "original_language": "en",
       "original_title": "2001: A Space Odyssey",
       "overview": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
-      "popularity": 19.7185,
+      "popularity": 20.1321,
       "poster_path": "/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
       "release_date": "1968-04-02",
       "softcore": false,
       "video": false,
       "vote_average": 8.048,
-      "vote_count": 12730,
+      "vote_count": 12732,
       "director": "Stanley Kubrick"
     }
   },
@@ -330,7 +330,7 @@
     "creator": "Alfred Hitchcock",
     "artwork_url": "https://image.tmdb.org/t/p/w500/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
     "release_year": 1960,
-    "apple_url": "https://tv.apple.com/search?term=Psycho",
+    "apple_url": "https://www.themoviedb.org/movie/539",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/mufF1aYvwdpKerhq5R1YrVcbJLY.jpg",
@@ -340,13 +340,13 @@
       "original_language": "en",
       "original_title": "Psycho",
       "overview": "When larcenous real estate clerk Marion Crane goes on the lam with a wad of cash and hopes of starting a new life, she ends up at the notorious Bates Motel, where manager Norman Bates cares for his housebound mother.",
-      "popularity": 16.4009,
+      "popularity": 17.8427,
       "poster_path": "/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
       "release_date": "1960-06-22",
       "softcore": false,
       "video": false,
       "vote_average": 8.412,
-      "vote_count": 11091,
+      "vote_count": 11092,
       "director": "Alfred Hitchcock"
     }
   },
@@ -357,7 +357,7 @@
     "creator": "Roman Polanski",
     "artwork_url": "https://image.tmdb.org/t/p/w500/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg",
     "release_year": 1974,
-    "apple_url": "https://tv.apple.com/search?term=Chinatown",
+    "apple_url": "https://www.themoviedb.org/movie/829",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/pyvkujOZ5qvY2NlQVC71flfgVWE.jpg",
@@ -373,7 +373,7 @@
       "softcore": false,
       "video": false,
       "vote_average": 7.906,
-      "vote_count": 4312,
+      "vote_count": 4313,
       "director": "Roman Polanski"
     }
   },
@@ -384,7 +384,7 @@
     "creator": "Miloš Forman",
     "artwork_url": "https://image.tmdb.org/t/p/w500/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg",
     "release_year": 1975,
-    "apple_url": "https://tv.apple.com/search?term=One%20Flew%20Over%20the%20Cuckoo's%20Nest",
+    "apple_url": "https://www.themoviedb.org/movie/510",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/uA8eSNAUUUyfHNIrG4h0zHxzt9W.jpg",
@@ -394,13 +394,13 @@
       "original_language": "en",
       "original_title": "One Flew Over the Cuckoo's Nest",
       "overview": "A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward.",
-      "popularity": 15.7245,
+      "popularity": 17.1873,
       "poster_path": "/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg",
       "release_date": "1975-11-19",
       "softcore": false,
       "video": false,
       "vote_average": 8.408,
-      "vote_count": 11569,
+      "vote_count": 11570,
       "director": "Miloš Forman"
     }
   },
@@ -411,7 +411,7 @@
     "creator": "George Lucas",
     "artwork_url": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
     "release_year": 1977,
-    "apple_url": "https://tv.apple.com/search?term=Star%20Wars",
+    "apple_url": "https://www.themoviedb.org/movie/11",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/yUiXA68FfQeA8cRBhd0Ao0jIRZt.jpg",
@@ -421,7 +421,7 @@
       "original_language": "en",
       "original_title": "Star Wars",
       "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
-      "popularity": 30.2365,
+      "popularity": 33.9677,
       "poster_path": "/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
       "release_date": "1977-05-25",
       "softcore": false,
@@ -438,7 +438,7 @@
     "creator": "Martin Scorsese",
     "artwork_url": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
     "release_year": 1976,
-    "apple_url": "https://tv.apple.com/search?term=Taxi%20Driver",
+    "apple_url": "https://www.themoviedb.org/movie/103",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/9uddYYTNcLWpzUkl5iw1RUYhLhY.jpg",
@@ -454,7 +454,7 @@
       "softcore": false,
       "video": false,
       "vote_average": 8.124,
-      "vote_count": 13573,
+      "vote_count": 13575,
       "director": "Martin Scorsese"
     }
   },
@@ -465,7 +465,7 @@
     "creator": "Bruno Mattei",
     "artwork_url": "https://image.tmdb.org/t/p/w500/3aLabIgttFYtHaN7eVQAA9nGdHz.jpg",
     "release_year": 1995,
-    "apple_url": "https://tv.apple.com/search?term=Cruel%20Jaws",
+    "apple_url": "https://www.themoviedb.org/movie/84060",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/vCQRs9QMADZEbGiS4hJkjAzis36.jpg",
@@ -475,7 +475,7 @@
       "original_language": "en",
       "original_title": "Cruel Jaws",
       "overview": "A tiger shark bred by the Navy as a killing machine is wreaking havoc in the sleepy tourist town of Hampton Bay.",
-      "popularity": 1.5258,
+      "popularity": 1.2755,
       "poster_path": "/3aLabIgttFYtHaN7eVQAA9nGdHz.jpg",
       "release_date": "1995-05-05",
       "softcore": false,
@@ -492,7 +492,7 @@
     "creator": "Billy Wilder",
     "artwork_url": "https://image.tmdb.org/t/p/w500/hVIKyTK13AvOGv7ICmJjK44DTzp.jpg",
     "release_year": 1959,
-    "apple_url": "https://tv.apple.com/search?term=Some%20Like%20It%20Hot",
+    "apple_url": "https://www.themoviedb.org/movie/239",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/5zTwAcnI3zCJ0mucPPnoBtkSWEV.jpg",
@@ -502,7 +502,7 @@
       "original_language": "en",
       "original_title": "Some Like It Hot",
       "overview": "In Prohibition-era Chicago, musicians Joe and Jerry witness a mob hit, and flee the state in an all-female band disguised as Josephine and Daphne, but further complications set in.",
-      "popularity": 8.1742,
+      "popularity": 7.8887,
       "poster_path": "/hVIKyTK13AvOGv7ICmJjK44DTzp.jpg",
       "release_date": "1959-03-19",
       "softcore": false,
@@ -519,7 +519,7 @@
     "creator": "Martin Scorsese",
     "artwork_url": "https://image.tmdb.org/t/p/w500/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg",
     "release_year": 1990,
-    "apple_url": "https://tv.apple.com/search?term=GoodFellas",
+    "apple_url": "https://www.themoviedb.org/movie/769",
     "raw_metadata": {
       "adult": false,
       "backdrop_path": "/gILte6Zd7m1YneIr6MVhh30S9pr.jpg",
@@ -529,13 +529,13 @@
       "original_language": "en",
       "original_title": "GoodFellas",
       "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
-      "popularity": 24.7881,
+      "popularity": 26.9816,
       "poster_path": "/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg",
       "release_date": "1990-09-12",
       "softcore": false,
       "video": false,
-      "vote_average": 8.452,
-      "vote_count": 14529,
+      "vote_average": 8.5,
+      "vote_count": 14530,
       "director": "Martin Scorsese"
     }
   }

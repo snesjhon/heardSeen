@@ -24,8 +24,11 @@ export interface NormalizedMovie {
   creator: string;
   artwork_url: string | null;
   release_year: number | null;
-  // No official API maps a TMDB id to an Apple TV catalog id, so this is a
-  // best-effort search deep link, not an exact per-title page.
+  // No official API maps a TMDB id to an Apple TV catalog id, so this links
+  // to the movie's TMDB page rather than tv.apple.com directly -- TMDB's
+  // "Where to Watch" section links out to Apple TV (via JustWatch) when the
+  // title is available there, which a constructed tv.apple.com/search guess
+  // can't reliably do.
   apple_url: string | null;
   raw_metadata: TmdbMovieResult & { director: string | null };
 }
@@ -45,8 +48,8 @@ async function fetchDirector(movieId: number): Promise<string | null> {
   return data.crew.find((member) => member.job === "Director")?.name ?? null;
 }
 
-function appleTvSearchUrl(title: string): string {
-  return `https://tv.apple.com/search?term=${encodeURIComponent(title)}`;
+function tmdbMoviePageUrl(id: number): string {
+  return `https://www.themoviedb.org/movie/${id}`;
 }
 
 export async function searchMovie(
@@ -76,7 +79,7 @@ export async function searchMovie(
     release_year: best.release_date
       ? new Date(best.release_date).getUTCFullYear()
       : null,
-    apple_url: appleTvSearchUrl(best.title),
+    apple_url: tmdbMoviePageUrl(best.id),
     raw_metadata: { ...best, director },
   };
 }

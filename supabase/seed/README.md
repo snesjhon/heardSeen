@@ -9,9 +9,13 @@ Two-step pipeline:
      at your downloaded `.p8` key file — an Apple Developer Program membership, ~$99/yr). Without
      these, albums are written as unenriched placeholders (title/artist only, no artwork/`apple_url`)
      so the pipeline still runs end-to-end.
-   - Movies: [TMDB](https://www.themoviedb.org/settings/api) (needs `TMDB_API_KEY` in `.env`). Without a key,
-     movies are written as unenriched placeholders (title only, `apple_url` falls back to a
-     `tv.apple.com/search` link) so the pipeline still runs end-to-end.
+   - Movies: [TMDB](https://www.themoviedb.org/settings/api) (needs `TMDB_API_KEY` in `.env`).
+     `apple_url` for movies points at the title's TMDB page (`themoviedb.org/movie/{id}`), not
+     directly at Apple — TMDB's "Where to Watch" section links onward to Apple TV/other providers
+     when available, which is more reliable than guessing a tv.apple.com search URL (there's no
+     official TMDB-id-to-Apple-TV-id mapping). Without a key, movies are written as unenriched
+     placeholders (title only, `apple_url` falls back to a `themoviedb.org/search` link) so the
+     pipeline still runs end-to-end.
 
    Output goes to `data/*.json`, which is checked into git so the repo is immediately seedable
    without re-running network calls — **currently these are all unenriched placeholders**, since no
