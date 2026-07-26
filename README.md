@@ -53,9 +53,9 @@ pnpm run seed:generate   # enrich from the real Apple Music/TMDB APIs (needs the
 pnpm run seed            # upsert into Supabase
 ```
 
-`data/*.json` is committed as-is, but currently holds **unenriched placeholders** (title/artist or
-title only, no artwork/deep link) since no real Apple Music or TMDB credentials exist in this
-environment — re-run `seed:generate` once you've added yours.
+`data/*.json` is gitignored, local-only output — Supabase is the source of truth once seeded, not
+this JSON. `seed:generate` writes placeholders for whichever of Apple Music/TMDB is missing
+credentials in `.env`.
 
 Run the app:
 

@@ -77,8 +77,9 @@ heardSeen/
 │   └── seed/
 │       ├── lists.config.ts      (which lists get seeded)
 │       ├── sources/*.source.json (hand-authored title/artist lists, ~20 items each)
-│       ├── generate-seed-data.ts (enriches sources → data/*.json via Apple Music/TMDB)
+│       ├── generate-seed-data.ts (enriches sources → data/*.json, gitignored, via Apple Music/TMDB)
 │       ├── seed-runner.ts        (upserts data/*.json into Supabase)
+│       ├── reset-seed-tables.ts  (wipes media_items/lists for a clean reseed)
 │       └── README.md             (sample-vs-full-list scope, how to extend)
 └── README.md
 ```
@@ -94,21 +95,15 @@ independent pieces:
   login + callback.
 - **Data integration** — `lib/apple-music/catalog.ts` (Catalog API + JWT signing), `lib/tmdb/movies.ts`.
 - **Seed pipeline** — 3 sample lists (~20 items each: 1001 Albums, Rolling Stone 500, AFI's 100
-  Movies). Neither albums nor movies are enriched yet — both need real credentials you haven't
-  added (Apple Music Catalog / TMDB), so `data/*.json` currently holds title-only placeholders.
-- **Core UI** — dashboard, lists browse/detail, diary, media cards with Apple deep links.
+  Movies), fully enriched with real Apple Music/TMDB data and live in a real Supabase project.
+  `data/*.json` (the enrichment output) is gitignored, local-only — the database is the source of
+  truth once seeded, regenerate anytime with `seed:generate`.
+- **Core UI** — dashboard, lists browse/detail, diary, media cards with Apple/TMDB deep links.
 - **PWA polish** — manifest, icon set, Serwist service worker, iOS "Add to Home Screen" banner.
 
-### What's still open (needs your input or real credentials — see README)
+### What's still open
 
 1. **Full list compilation.** The seeded lists are ~20-item *samples*, not the real 500-1001-item
    canon. Extending them is research/data-entry work (verify rank + exact title/artist against a
    public factual source per list) — see `supabase/seed/README.md` for the extension process.
-2. **A real Supabase project.** Migrations are written but unverified against a live/local Postgres
-   (no Docker in this environment) — run `pnpm exec supabase db push` (linked) or
-   `supabase start && supabase db reset` (local, needs Docker) once you're ready, and sanity-check
-   the `list_progress` view's output against real data.
-3. **Apple Music + TMDB keys.** Albums and movies are both currently seeded as unenriched
-   placeholders. Add `APPLE_TEAM_ID`/`APPLE_KEY_ID`/`APPLE_PRIVATE_KEY_PATH` (pointing at your
-   downloaded `.p8` file) and `TMDB_API_KEY`, then re-run `pnpm run seed:generate && pnpm run seed`.
-4. **Deployment.** Vercel project + env vars — last-mile, needs your real credentials.
+2. **Deployment.** See README's Vercel section — not yet deployed.

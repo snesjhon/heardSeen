@@ -17,9 +17,9 @@ Two-step pipeline:
      placeholders (title only, `apple_url` falls back to a `themoviedb.org/search` link) so the
      pipeline still runs end-to-end.
 
-   Output goes to `data/*.json`, which is checked into git so the repo is immediately seedable
-   without re-running network calls — **currently these are all unenriched placeholders**, since no
-   real credentials exist in this environment. Re-run once you've added yours.
+   Output goes to `data/*.json` — **gitignored, local only**. It's a disposable intermediate
+   artifact, not a source of truth: once `pnpm run seed` has loaded it into Supabase, the database
+   is the source of truth, not this JSON. Regenerate it any time with `seed:generate`.
 
 2. **`pnpm run seed`** — upserts `data/*.json` into Supabase (`lists`, `media_items`, `list_items`)
    via the service-role client. Safe to re-run *as long as each media_item's `external_id` hasn't
