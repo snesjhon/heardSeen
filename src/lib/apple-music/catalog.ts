@@ -107,6 +107,28 @@ export interface NormalizedAlbum {
 
 let cachedToken: { token: string; expiresAt: number } | null = null;
 
+// Deployed environments (Vercel) have no gitignored .p8 file on disk, so the
+// key content itself must come through as an env var there. Local dev/seeding
+// keeps using a file path since that's easier to manage than a multi-line
+// secret in `.env`.
+function loadPrivateKey(): string {
+  const keyContent = process.env.APPLE_PRIVATE_KEY;
+  if (keyContent) {
+    return keyContent.includes("BEGIN PRIVATE KEY")
+      ? keyContent.replace(/\\n/g, "\n")
+      : Buffer.from(keyContent, "base64").toString("utf-8");
+  }
+
+  const privateKeyPath = process.env.APPLE_PRIVATE_KEY_PATH;
+  if (privateKeyPath) {
+    return readFileSync(resolve(privateKeyPath), "utf-8");
+  }
+
+  throw new Error(
+    "Either APPLE_PRIVATE_KEY (key contents) or APPLE_PRIVATE_KEY_PATH (local file path) must be set to call the Apple Music Catalog API",
+  );
+}
+
 function getDeveloperToken(): string {
   if (cachedToken && cachedToken.expiresAt > Date.now()) {
     return cachedToken.token;
@@ -114,15 +136,14 @@ function getDeveloperToken(): string {
 
   const teamId = process.env.APPLE_TEAM_ID;
   const keyId = process.env.APPLE_KEY_ID;
-  const privateKeyPath = process.env.APPLE_PRIVATE_KEY_PATH;
 
-  if (!teamId || !keyId || !privateKeyPath) {
+  if (!teamId || !keyId) {
     throw new Error(
-      "APPLE_TEAM_ID, APPLE_KEY_ID, and APPLE_PRIVATE_KEY_PATH must all be set to call the Apple Music Catalog API",
+      "APPLE_TEAM_ID and APPLE_KEY_ID must be set to call the Apple Music Catalog API",
     );
   }
 
-  const privateKey = readFileSync(resolve(privateKeyPath), "utf-8");
+  const privateKey = loadPrivateKey();
 
   const token = jwt.sign({}, privateKey, {
     algorithm: "ES256",

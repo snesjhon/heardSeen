@@ -94,5 +94,11 @@ a day via Next's fetch cache, and falling back to the saved Supabase fields if t
 ## Deploying
 
 Target is Vercel. Set the same env vars from `.env` in the Vercel project settings, including the
-Apple Music and TMDB credentials — album/movie detail pages call those APIs live in production, not
-just during local seeding.
+TMDB credentials — album/movie detail pages call those APIs live in production, not just during
+local seeding.
+
+Apple Music is the one exception: locally, `APPLE_PRIVATE_KEY_PATH` points at the gitignored `.p8`
+file, but that file doesn't exist on Vercel's filesystem. In the Vercel project settings, set
+`APPLE_PRIVATE_KEY` instead, to the `.p8` file's full contents (paste the PEM as-is, newlines and
+all — the Vercel dashboard preserves them). `src/lib/apple-music/catalog.ts` prefers
+`APPLE_PRIVATE_KEY` when set and falls back to `APPLE_PRIVATE_KEY_PATH`, so local dev is unaffected.
