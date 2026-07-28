@@ -53,7 +53,8 @@ export default async function ListDetailPage({ params }: ListDetailPageProps) {
         "media_item_id",
         items.map((item) => item.id),
       )
-      .order("logged_at", { ascending: false });
+      .order("logged_at", { ascending: false, nullsFirst: false })
+      .order("created_at", { ascending: false });
 
     // Most recent entry per media item wins when re-logged more than once
     // (entries are ordered newest-first, so the first occurrence sticks).

@@ -23,7 +23,7 @@ export default async function DiaryPage() {
     .from("diary_entries")
     .select("*, media_item:media_items(*)")
     .eq("user_id", user.id)
-    .order("logged_at", { ascending: false })
+    .order("logged_at", { ascending: false, nullsFirst: false })
     .order("created_at", { ascending: false })) as {
     data: DiaryEntryWithMediaItem[] | null;
     error: { message: string } | null;
@@ -53,26 +53,41 @@ export default async function DiaryPage() {
       <ul className="mt-6 flex flex-col divide-y divide-neutral-200 dark:divide-neutral-800">
         {entries?.map((entry) => {
           const mediaItem = entry.media_item;
+          const href = mediaItem
+            ? `/${mediaItem.type === "album" ? "albums" : "movies"}/${mediaItem.id}`
+            : null;
+          const artwork = (
+            <div className="h-16 w-16 shrink-0 overflow-hidden rounded-md bg-neutral-200 dark:bg-neutral-800">
+              {mediaItem?.artwork_url ? (
+                <img
+                  src={mediaItem.artwork_url}
+                  alt=""
+                  className="h-full w-full object-cover"
+                />
+              ) : null}
+            </div>
+          );
+          const title = (
+            <p className="truncate text-sm font-medium">
+              {mediaItem?.title ?? "Unknown item"}
+            </p>
+          );
           return (
             <li key={entry.id} className="flex gap-3 py-3">
-              <div className="h-16 w-16 shrink-0 overflow-hidden rounded-md bg-neutral-200 dark:bg-neutral-800">
-                {mediaItem?.artwork_url ? (
-                  <img
-                    src={mediaItem.artwork_url}
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
-                ) : null}
-              </div>
+              {href ? (
+                <Link href={href} className="shrink-0">
+                  {artwork}
+                </Link>
+              ) : (
+                artwork
+              )}
               <div className="min-w-0 flex-1">
-                <p className="truncate text-sm font-medium">
-                  {mediaItem?.title ?? "Unknown item"}
-                </p>
+                {href ? <Link href={href}>{title}</Link> : title}
                 <p className="truncate text-xs text-neutral-500 dark:text-neutral-400">
                   {mediaItem?.creator}
                 </p>
                 <div className="mt-1 flex items-center gap-2 text-xs text-neutral-500 dark:text-neutral-400">
-                  <span>{entry.logged_at}</span>
+                  <span>{entry.logged_at ?? "Date unknown"}</span>
                   {entry.rating && <span>{"★".repeat(entry.rating)}</span>}
                 </div>
                 {entry.notes && (

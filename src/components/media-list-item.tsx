@@ -29,7 +29,7 @@ export function MediaListItem({
 
       {entry && (
         <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-          Logged {entry.logged_at}
+          Logged {entry.logged_at ?? "(date unknown)"}
           {entry.rating ? ` · ${entry.rating}★` : ""}
         </p>
       )}

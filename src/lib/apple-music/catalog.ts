@@ -46,6 +46,54 @@ interface AppleMusicSearchResponse {
   };
 }
 
+interface AppleMusicTrack {
+  id: string;
+  attributes: {
+    name: string;
+    durationInMillis?: number;
+    trackNumber?: number;
+    discNumber?: number;
+  };
+}
+
+interface AppleMusicAlbumDetail extends AppleMusicAlbum {
+  attributes: AppleMusicAlbum["attributes"] & {
+    genreNames?: string[];
+    trackCount?: number;
+    copyright?: string;
+    recordLabel?: string;
+    editorialNotes?: { standard?: string; short?: string };
+  };
+  relationships?: {
+    tracks?: { data: AppleMusicTrack[] };
+  };
+}
+
+interface AppleMusicAlbumLookupResponse {
+  data: AppleMusicAlbumDetail[];
+}
+
+export interface AlbumDetail {
+  id: string;
+  title: string;
+  artist: string;
+  artworkUrl: string | null;
+  releaseDate: string | null;
+  genres: string[];
+  trackCount: number | null;
+  recordLabel: string | null;
+  copyright: string | null;
+  editorialNote: string | null;
+  appleUrl: string | null;
+  tracks: Array<{
+    id: string;
+    number: number | null;
+    discNumber: number | null;
+    name: string;
+    durationMs: number | null;
+  }>;
+}
+
 export interface NormalizedAlbum {
   type: "album";
   external_id: string;
@@ -145,4 +193,64 @@ export async function searchAlbum(
     ) ?? results[0];
 
   return normalize(best);
+}
+
+// Full-detail lookup by catalog id, including the tracklist -- used by album
+// detail pages (called at request time, not just offline by the seed
+// script). Cached for a day via Next's fetch cache so repeat visits don't
+// re-hit the Catalog API or re-sign a token on every request.
+export async function getAlbum(
+  catalogId: string,
+  storefront = DEFAULT_STOREFRONT,
+): Promise<AlbumDetail | null> {
+  const token = getDeveloperToken();
+  const url = `${CATALOG_API_BASE}/${storefront}/albums/${catalogId}?include=tracks`;
+
+  const response = await fetch(url, {
+    headers: { Authorization: `Bearer ${token}` },
+    next: { revalidate: 60 * 60 * 24 },
+  });
+
+  if (response.status === 404) return null;
+  if (!response.ok) {
+    throw new Error(
+      `Apple Music Catalog album lookup failed: ${response.status} ${await response.text()}`,
+    );
+  }
+
+  const data = (await response.json()) as AppleMusicAlbumLookupResponse;
+  const album = data.data[0];
+  if (!album) return null;
+
+  const tracks = (album.relationships?.tracks?.data ?? [])
+    .map((track) => ({
+      id: track.id,
+      number: track.attributes.trackNumber ?? null,
+      discNumber: track.attributes.discNumber ?? null,
+      name: track.attributes.name,
+      durationMs: track.attributes.durationInMillis ?? null,
+    }))
+    .sort(
+      (a, b) =>
+        (a.discNumber ?? 0) - (b.discNumber ?? 0) ||
+        (a.number ?? 0) - (b.number ?? 0),
+    );
+
+  return {
+    id: album.id,
+    title: album.attributes.name,
+    artist: album.attributes.artistName,
+    artworkUrl: largeArtworkUrl(album.attributes.artwork),
+    releaseDate: album.attributes.releaseDate ?? null,
+    genres: album.attributes.genreNames ?? [],
+    trackCount: album.attributes.trackCount ?? tracks.length ?? null,
+    recordLabel: album.attributes.recordLabel ?? null,
+    copyright: album.attributes.copyright ?? null,
+    editorialNote:
+      album.attributes.editorialNotes?.standard ??
+      album.attributes.editorialNotes?.short ??
+      null,
+    appleUrl: album.attributes.url ?? null,
+    tracks,
+  };
 }

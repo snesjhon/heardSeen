@@ -1,5 +1,12 @@
 # Seed data
 
+This only seeds the lightweight fields (`title`/`creator`/`artwork_url`/`release_year`/`apple_url`)
+needed for browsing lists and identifying an item. The rich stuff — an album's tracklist, a movie's
+synopsis/cast/crew/runtime — is deliberately **not** seeded; `/albums/[id]` and `/movies/[id]` fetch
+that live from Apple Music/TMDB on each visit instead (see `src/lib/apple-music/catalog.ts`'s
+`getAlbum` and `src/lib/tmdb/movies.ts`'s `getMovie`). That keeps this pipeline about identity/
+membership ("which items are on this list"), not a mirror of Apple Music/TMDB's full catalogs.
+
 Two-step pipeline:
 
 1. **`pnpm run seed:generate`** — reads the small hand-authored source lists in `sources/*.source.json`

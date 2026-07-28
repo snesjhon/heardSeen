@@ -8,20 +8,26 @@ import type { DiaryEntry } from "@/lib/types/database";
 
 type LogEntryFormProps = {
   mediaItemId: string;
-  listId: string;
+  // Null when logged from a media item's own detail page, outside the
+  // context of any particular list -- list_id on a diary entry is just
+  // "what was I browsing," never required.
+  listId: string | null;
   userId: string;
   onLogged?: (entry: DiaryEntry) => void;
   onCancel?: () => void;
 };
 
-function today() {
-  return new Date().toISOString().slice(0, 10);
-}
-
 // Inline "log this" form. Inserts directly into diary_entries using the
 // browser Supabase client -- RLS requires auth.uid() = user_id, so the
 // current user's id (fetched server-side by the parent page) is passed in
 // and sent explicitly on the insert.
+//
+// The date field is blank by default, not pre-filled with today: most items
+// are being logged because they were already heard/seen at some unknown
+// point in the past, not experienced for the first time right now. Leaving
+// it blank records the entry as "added today, date unknown" (logged_at
+// null, created_at is the timestamp of record); only fill in a date when
+// you actually know when you heard/saw it.
 export function LogEntryForm({
   mediaItemId,
   listId,
@@ -32,7 +38,7 @@ export function LogEntryForm({
   const router = useRouter();
   const [rating, setRating] = useState<number | null>(null);
   const [notes, setNotes] = useState("");
-  const [loggedAt, setLoggedAt] = useState(today());
+  const [loggedAt, setLoggedAt] = useState("");
   const [status, setStatus] = useState<"idle" | "saving" | "error">("idle");
 
   async function handleSubmit(event: React.FormEvent) {
@@ -48,7 +54,7 @@ export function LogEntryForm({
         list_id: listId,
         rating,
         notes: notes.trim() || null,
-        logged_at: loggedAt,
+        logged_at: loggedAt || null,
       })
       .select()
       .single();
@@ -86,8 +92,12 @@ export function LogEntryForm({
         value={loggedAt}
         onChange={(event) => setLoggedAt(event.target.value)}
         disabled={status === "saving"}
+        aria-label="Date (leave blank if you don't know when)"
         className="rounded-md border border-neutral-300 px-2 py-1.5 text-sm dark:border-neutral-700 dark:bg-neutral-900"
       />
+      <p className="text-xs text-neutral-400 dark:text-neutral-500">
+        Leave the date blank if you don't remember exactly when.
+      </p>
       {status === "error" && (
         <p className="text-xs text-red-600">
           Couldn't save that entry. Try again.

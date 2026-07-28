@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { MediaItem } from "@/lib/types/database";
 
 type MediaCardProps = {
@@ -5,9 +6,9 @@ type MediaCardProps = {
   logged?: boolean;
 };
 
-// Album/movie card. The whole card links out to apple_url (universal link on
-// iOS opens the native Apple Music/TV app, falls back to web) when present.
-// Falls back to a plain, non-clickable card when there's no apple_url.
+// Album/movie card. The whole card links to the item's own detail page
+// (rich tracklist/cast page) -- the external Apple Music/TMDB deep link
+// lives as an explicit button on that page instead of hijacking the card.
 export function MediaCard({ item, logged }: MediaCardProps) {
   const content = (
     <>
@@ -44,18 +45,12 @@ export function MediaCard({ item, logged }: MediaCardProps) {
     </>
   );
 
-  if (item.apple_url) {
-    return (
-      <a
-        href={item.apple_url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block w-full text-left"
-      >
-        {content}
-      </a>
-    );
-  }
-
-  return <div className="w-full">{content}</div>;
+  return (
+    <Link
+      href={`/${item.type === "album" ? "albums" : "movies"}/${item.id}`}
+      className="block w-full text-left"
+    >
+      {content}
+    </Link>
+  );
 }

@@ -57,7 +57,7 @@ export type DiaryEntry = {
   list_id: string | null;
   rating: number | null;
   notes: string | null;
-  logged_at: string;
+  logged_at: string | null;
   created_at: string;
 };
 
