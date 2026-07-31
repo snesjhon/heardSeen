@@ -1,15 +1,69 @@
 import { notFound } from "next/navigation";
 import { MediaListItem } from "@/components/media-list-item";
+import { PaginationControls } from "@/components/pagination-controls";
+import { SortSelect } from "@/components/sort-select";
+import {
+  DEFAULT_PAGE_SIZE,
+  getPageRange,
+  getTotalPages,
+  parsePage,
+  parseSort,
+  type RawSearchParams,
+  type SortOption,
+} from "@/lib/pagination";
 import { createClient } from "@/lib/supabase/server";
 import type { DiaryEntry, MediaItem } from "@/lib/types/database";
 
 type ListDetailPageProps = {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<RawSearchParams>;
 };
+
+// `column` uses postgrest's dotted/parenthesized embed syntax
+// (`media_item(title)`) rather than `referencedTable` -- passing the column
+// through `.order()`'s `referencedTable` option only reorders items *within*
+// each row's nested embed, it never reorders the parent rows. Giving
+// `.order()` the full `media_item(title)` path as the column argument is
+// what actually reorders list_items by the joined media_items column.
+const SORT_OPTIONS = [
+  {
+    value: "position-asc",
+    label: "List order",
+    column: "position",
+    ascending: true,
+  },
+  {
+    value: "title-asc",
+    label: "Title (A-Z)",
+    column: "media_item(title)",
+    ascending: true,
+  },
+  {
+    value: "title-desc",
+    label: "Title (Z-A)",
+    column: "media_item(title)",
+    ascending: false,
+  },
+  {
+    value: "release_year-desc",
+    label: "Newest release",
+    column: "media_item(release_year)",
+    ascending: false,
+  },
+  {
+    value: "release_year-asc",
+    label: "Oldest release",
+    column: "media_item(release_year)",
+    ascending: true,
+  },
+] as const satisfies readonly SortOption[];
 
 // Public browse -- signed-out visitors can view a list's items; only
 // logged-in users get logged-state + the ability to log entries.
-export default async function ListDetailPage({ params }: ListDetailPageProps) {
+export default async function ListDetailPage({
+  params,
+  searchParams,
+}: ListDetailPageProps) {
   const { slug } = await params;
   const supabase = await createClient();
 
@@ -23,17 +77,26 @@ export default async function ListDetailPage({ params }: ListDetailPageProps) {
     notFound();
   }
 
+  const resolvedSearchParams = await searchParams;
+  const page = parsePage(resolvedSearchParams);
+  const sort = parseSort(SORT_OPTIONS, resolvedSearchParams);
+  const [from, to] = getPageRange(page, DEFAULT_PAGE_SIZE);
+
   // Relationships: [] on list_items/media_items means postgrest-js can't
   // infer embedded-select shapes, so the row shape is asserted by hand here
   // rather than cast around a `never` -- it matches the actual query exactly.
-  const { data: listItems } = (await supabase
+  const { data: listItems, count } = (await supabase
     .from("list_items")
-    .select("position, media_item:media_items(*)")
+    .select("position, media_item:media_items!inner(*)", { count: "exact" })
     .eq("list_id", list.id)
-    .order("position")) as {
+    .order(sort.column, { ascending: sort.ascending })
+    .range(from, to)) as {
     data: { position: number; media_item: MediaItem | null }[] | null;
+    count: number | null;
     error: unknown;
   };
+
+  const totalPages = getTotalPages(count, DEFAULT_PAGE_SIZE);
 
   const items = (listItems ?? [])
     .map((row) => row.media_item)
@@ -85,7 +148,13 @@ export default async function ListDetailPage({ params }: ListDetailPageProps) {
         </p>
       )}
 
-      <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+      {items.length > 0 && (
+        <div className="mt-6 flex justify-end">
+          <SortSelect options={SORT_OPTIONS} current={sort.value} />
+        </div>
+      )}
+
+      <ul className="mt-3 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
         {items.map((item) => (
           <li key={item.id}>
             <MediaListItem
@@ -98,11 +167,18 @@ export default async function ListDetailPage({ params }: ListDetailPageProps) {
         ))}
       </ul>
 
-      {items.length === 0 && (
+      {items.length === 0 && page === 1 && (
         <p className="mt-6 text-sm text-neutral-500 dark:text-neutral-400">
           This list has no items yet.
         </p>
       )}
+
+      <PaginationControls
+        basePath={`/lists/${slug}`}
+        searchParams={resolvedSearchParams}
+        currentPage={page}
+        totalPages={totalPages}
+      />
     </main>
   );
 }

@@ -1,9 +1,53 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { ListProgressBar } from "@/components/list-progress-bar";
+import { PaginationControls } from "@/components/pagination-controls";
+import { SortSelect } from "@/components/sort-select";
+import {
+  DEFAULT_PAGE_SIZE,
+  getPageRange,
+  getTotalPages,
+  parsePage,
+  parseSort,
+  type RawSearchParams,
+  type SortOption,
+} from "@/lib/pagination";
 import { createClient } from "@/lib/supabase/server";
 
-export default async function DashboardPage() {
+const SORT_OPTIONS = [
+  {
+    value: "title-asc",
+    label: "Title (A-Z)",
+    column: "title",
+    ascending: true,
+  },
+  {
+    value: "title-desc",
+    label: "Title (Z-A)",
+    column: "title",
+    ascending: false,
+  },
+  {
+    value: "completed-desc",
+    label: "Most complete",
+    column: "completed_items",
+    ascending: false,
+  },
+  {
+    value: "completed-asc",
+    label: "Least complete",
+    column: "completed_items",
+    ascending: true,
+  },
+] as const satisfies readonly SortOption[];
+
+type DashboardPageProps = {
+  searchParams: Promise<RawSearchParams>;
+};
+
+export default async function DashboardPage({
+  searchParams,
+}: DashboardPageProps) {
   const supabase = await createClient();
 
   const {
@@ -14,10 +58,22 @@ export default async function DashboardPage() {
     redirect("/login");
   }
 
-  const { data: progress, error } = await supabase
+  const resolvedSearchParams = await searchParams;
+  const page = parsePage(resolvedSearchParams);
+  const sort = parseSort(SORT_OPTIONS, resolvedSearchParams);
+  const [from, to] = getPageRange(page, DEFAULT_PAGE_SIZE);
+
+  const {
+    data: progress,
+    error,
+    count,
+  } = await supabase
     .from("list_progress")
-    .select("*")
-    .order("title");
+    .select("*", { count: "exact" })
+    .order(sort.column, { ascending: sort.ascending })
+    .range(from, to);
+
+  const totalPages = getTotalPages(count, DEFAULT_PAGE_SIZE);
 
   return (
     <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-6">
@@ -32,7 +88,7 @@ export default async function DashboardPage() {
         </p>
       )}
 
-      {!error && progress?.length === 0 && (
+      {!error && progress?.length === 0 && page === 1 && (
         <p className="mt-6 text-sm text-neutral-500 dark:text-neutral-400">
           No lists yet.{" "}
           <Link href="/lists" className="underline">
@@ -42,7 +98,13 @@ export default async function DashboardPage() {
         </p>
       )}
 
-      <ul className="mt-6 flex flex-col gap-3">
+      {!error && (progress?.length ?? 0) > 0 && (
+        <div className="mt-6 flex justify-end">
+          <SortSelect options={SORT_OPTIONS} current={sort.value} />
+        </div>
+      )}
+
+      <ul className="mt-3 flex flex-col gap-3">
         {progress?.map((list) => (
           <li key={list.list_id}>
             <Link
@@ -65,6 +127,13 @@ export default async function DashboardPage() {
           </li>
         ))}
       </ul>
+
+      <PaginationControls
+        basePath="/"
+        searchParams={resolvedSearchParams}
+        currentPage={page}
+        totalPages={totalPages}
+      />
     </main>
   );
 }
