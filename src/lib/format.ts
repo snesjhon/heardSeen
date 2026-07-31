@@ -45,3 +45,14 @@ export function sanitizeEditorialHtml(html: string): string {
     .replace(/\n/g, "<br>")}</p>`;
   return sanitizeHtml(withParagraphs, EDITORIAL_HTML_OPTIONS);
 }
+
+// Plain-text write-ups (e.g. a list's own per-item description, as opposed to
+// Apple Music's HTML editorial notes above) use bare newlines for paragraph
+// breaks -- split into an array to render as separate <p> elements instead
+// of one run-on block.
+export function splitParagraphs(text: string): string[] {
+  return text
+    .split(/\n+/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+}

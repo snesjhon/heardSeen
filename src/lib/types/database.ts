@@ -48,6 +48,7 @@ export type ListItem = {
   list_id: string;
   media_item_id: string;
   position: number;
+  description: string | null;
 };
 
 export type DiaryEntry = {

@@ -27,9 +27,15 @@ function hasAppleMusicCredentials(): boolean {
   );
 }
 
+// Rolling Stone-style source lists carry their own write-up per item
+// (`description`, from the magazine's copy) alongside title/artist --
+// distinct from Apple Music's own `editorialNote`, which `getAlbum` fetches
+// live and which most sources don't have at all.
+type EnrichedAlbum = NormalizedAlbum & { description?: string };
+
 async function enrichAlbums(
-  sources: Array<{ title: string; artist: string }>,
-): Promise<NormalizedAlbum[]> {
+  sources: Array<{ title: string; artist: string; description?: string }>,
+): Promise<EnrichedAlbum[]> {
   if (!hasAppleMusicCredentials()) {
     console.warn(
       "  ⚠ APPLE_TEAM_ID/APPLE_KEY_ID/APPLE_PRIVATE_KEY_PATH not set -- writing unenriched " +
@@ -48,10 +54,11 @@ async function enrichAlbums(
         id: "",
         attributes: { name: source.title, artistName: source.artist, url: "" },
       },
+      description: source.description,
     }));
   }
 
-  const enriched: NormalizedAlbum[] = [];
+  const enriched: EnrichedAlbum[] = [];
 
   for (const source of sources) {
     const result = await searchAlbum(source.title, source.artist);
@@ -61,7 +68,7 @@ async function enrichAlbums(
       );
       continue;
     }
-    enriched.push(result);
+    enriched.push({ ...result, description: source.description });
     // Be polite to the Catalog API.
     await new Promise((resolve) => setTimeout(resolve, 200));
   }

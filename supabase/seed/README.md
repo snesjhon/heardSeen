@@ -29,9 +29,15 @@ Two-step pipeline:
    is the source of truth, not this JSON. Regenerate it any time with `seed:generate`.
 
 2. **`pnpm run seed`** — upserts `data/*.json` into Supabase (`lists`, `media_items`, `list_items`)
-   via the service-role client. Safe to re-run *as long as each media_item's `external_id` hasn't
-   changed* since the last run — the upsert conflict key is `(type, external_id)`, so a changed id
-   creates a new row instead of replacing the old one.
+   via the service-role client, in batches of 50 rows per request rather than one row at a time (a
+   500-item list would otherwise mean ~1,000 sequential round trips). Safe to re-run *as long as
+   each media_item's `external_id` hasn't changed* since the last run — the upsert conflict key is
+   `(type, external_id)`, so a changed id creates a new row instead of replacing the old one.
+
+Some source lists also carry a per-item `description` (e.g. Rolling Stone's own write-up for why an
+album is ranked where it is). That's list-specific commentary, not part of an item's identity, so it
+lives on `list_items.description` rather than `media_items` — a `{ title, artist, description }`
+source entry flows straight through `seed:generate` into that column.
 
 If you've previously seeded placeholder data (no credentials yet) and are now reloading with real
 Apple Music/TMDB data, `external_id` changes (placeholder ids look like `unenriched:...`, real ones
@@ -48,12 +54,13 @@ pnpm run seed
 
 ## Current scope: samples, not the full lists
 
-`lists.config.ts` currently seeds **~20-item samples** of three lists, not the real 500-1001-item
-canon:
+`lists.config.ts` currently seeds **~20-item samples** of two lists, not the real full canon:
 
 - 1001 Albums You Must Hear Before You Die
-- Rolling Stone's 500 Greatest Albums of All Time
 - AFI's 100 Years...100 Movies
+
+Rolling Stone's 500 Greatest Albums of All Time is the exception — `sources/rolling-stone-500.source.json`
+has the real, full 500 entries (rank order, with each album's Rolling Stone write-up as `description`).
 
 Compiling the full lists is real research/data-entry work (verifying rank + exact title/artist for
 hundreds of entries against a public factual source, e.g. Wikipedia's tables for each list) —

@@ -6,6 +6,7 @@ import {
   formatDate,
   formatTrackDuration,
   sanitizeEditorialHtml,
+  splitParagraphs,
 } from "@/lib/format";
 import { createClient } from "@/lib/supabase/server";
 import type { DiaryEntry } from "@/lib/types/database";
@@ -44,6 +45,24 @@ export default async function AlbumPage({ params }: AlbumPageProps) {
       console.error("Apple Music album lookup failed", error);
     }
   }
+
+  // Relationships: [] on list_items means postgrest-js can't infer embedded-
+  // select shapes, so the row shape is asserted by hand (see the equivalent
+  // comment on /lists/[slug]) rather than cast around a `never`.
+  const { data: listWriteups } = (await supabase
+    .from("list_items")
+    .select("id, description, list:lists(title, source_attribution)")
+    .eq("media_item_id", item.id)
+    .not("description", "is", null)) as {
+    data:
+      | {
+          id: string;
+          description: string | null;
+          list: { title: string; source_attribution: string | null } | null;
+        }[]
+      | null;
+    error: unknown;
+  };
 
   const {
     data: { user },
@@ -114,17 +133,38 @@ export default async function AlbumPage({ params }: AlbumPageProps) {
       </div>
 
       {detail?.editorialNote && (
-        <div className="mt-6 text-sm text-neutral-700 dark:text-neutral-300 [&_li]:ml-4 [&_ol]:list-decimal [&_p+p]:mt-3 [&_ul]:list-disc">
-          {/* sanitizeEditorialHtml allowlists a handful of text-formatting
-              tags and strips every attribute (no href/src/on*), so this is
-              safe despite the source being third-party (Apple Music) markup. */}
-          <div
-            // biome-ignore lint/security/noDangerouslySetInnerHtml: sanitized above via sanitizeEditorialHtml
-            dangerouslySetInnerHTML={{
-              __html: sanitizeEditorialHtml(detail.editorialNote),
-            }}
-          />
+        <div className="mt-6">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
+            Apple Music
+          </h2>
+          <div className="mt-2 text-sm text-neutral-700 dark:text-neutral-300 [&_li]:ml-4 [&_ol]:list-decimal [&_p+p]:mt-3 [&_ul]:list-disc">
+            {/* sanitizeEditorialHtml allowlists a handful of text-formatting
+                tags and strips every attribute (no href/src/on*), so this is
+                safe despite the source being third-party (Apple Music) markup. */}
+            <div
+              // biome-ignore lint/security/noDangerouslySetInnerHtml: sanitized above via sanitizeEditorialHtml
+              dangerouslySetInnerHTML={{
+                __html: sanitizeEditorialHtml(detail.editorialNote),
+              }}
+            />
+          </div>
         </div>
+      )}
+
+      {(listWriteups ?? []).map((writeup) =>
+        writeup.description ? (
+          <div key={writeup.id} className="mt-6">
+            <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
+              {writeup.list?.source_attribution ?? writeup.list?.title}
+            </h2>
+            <div className="mt-2 space-y-3 text-sm text-neutral-700 dark:text-neutral-300">
+              {splitParagraphs(writeup.description).map((paragraph, i) => (
+                // biome-ignore lint/suspicious/noArrayIndexKey: paragraphs are static per render, never reordered
+                <p key={i}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+        ) : null,
       )}
 
       {detail && detail.tracks.length > 0 && (

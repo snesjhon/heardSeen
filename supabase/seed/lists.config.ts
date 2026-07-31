@@ -26,7 +26,7 @@ export const LISTS: ListConfig[] = [
   {
     slug: "rolling-stone-500",
     title: "Rolling Stone's 500 Greatest Albums of All Time",
-    description: "A sample from Rolling Stone magazine's ranked list.",
+    description: "Rolling Stone magazine's full ranked list of 500 albums.",
     mediaType: "album",
     sourceAttribution: "Rolling Stone",
     sourceFile: "sources/rolling-stone-500.source.json",

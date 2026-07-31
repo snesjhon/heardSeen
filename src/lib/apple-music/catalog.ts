@@ -181,9 +181,54 @@ function normalize(album: AppleMusicAlbum): NormalizedAlbum {
   };
 }
 
-// Best-effort search by "artist title" -- the seed script picks the closest
-// artist-name match; there's no exact-ID lookup without already knowing the
-// catalog id.
+// Lowercases and folds cosmetic variation that otherwise breaks exact string
+// comparison: curly vs straight quotes, and "&" vs "and" (Apple's catalog
+// credits are inconsistent between the two, e.g. "Sly & The Family Stone"
+// vs. a source list's "Sly and the Family Stone").
+function normalizeForMatch(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[‘’]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/\s*&\s*/g, " and ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// Strips trailing edition/remaster qualifiers -- possibly more than one, e.g.
+// "White Light/White Heat (Super Deluxe) [45th Anniversary]" -- so "The
+// Clash" matches "The Clash (2013 Remastered)" instead of only matching when
+// Apple's catalog title is byte-identical to the source title.
+function normalizeAlbumTitle(value: string): string {
+  let title = value;
+  let previous: string;
+  do {
+    previous = title;
+    title = title.replace(/\s*[[(][^[\]()]*[\])]\s*$/, "");
+  } while (title !== previous);
+  return normalizeForMatch(title);
+}
+
+// One artist crediting a reissue differently than the source list (e.g. "The
+// Velvet Underground & Nico" as the artist of an album by "The Velvet
+// Underground", or "Elvis Costello & The Attractions" for an "Elvis
+// Costello" album) shouldn't disqualify an otherwise exact title match.
+function artistMatches(candidateArtist: string, sourceArtist: string): boolean {
+  const candidate = normalizeForMatch(candidateArtist);
+  const source = normalizeForMatch(sourceArtist);
+  return (
+    candidate === source ||
+    candidate.startsWith(source) ||
+    source.startsWith(candidate)
+  );
+}
+
+// Best-effort search by "artist title". Apple's search ranks results by its
+// own relevance score, which is NOT title-aware once several albums share an
+// artist (e.g. querying "The Clash The Clash" can rank "London Calling"
+// above the self-titled "The Clash" album) -- so among same-artist results,
+// an exact (normalized) title match is preferred over just taking the top
+// hit; there's no exact-ID lookup without already knowing the catalog id.
 export async function searchAlbum(
   title: string,
   artist: string,
@@ -191,7 +236,9 @@ export async function searchAlbum(
 ): Promise<NormalizedAlbum | null> {
   const token = getDeveloperToken();
   const term = `${artist} ${title}`;
-  const url = `${CATALOG_API_BASE}/${storefront}/search?term=${encodeURIComponent(term)}&types=albums&limit=5`;
+  // Apple's search endpoint allows up to 25 results per request; the exact
+  // title we want is often ranked below 5 once an artist has many reissues.
+  const url = `${CATALOG_API_BASE}/${storefront}/search?term=${encodeURIComponent(term)}&types=albums&limit=25`;
 
   const response = await fetch(url, {
     headers: { Authorization: `Bearer ${token}` },
@@ -207,11 +254,17 @@ export async function searchAlbum(
   const results = data.results.albums?.data ?? [];
   if (results.length === 0) return null;
 
+  const sameArtist = results.filter((album) =>
+    artistMatches(album.attributes.artistName, artist),
+  );
+  const normalizedTitle = normalizeAlbumTitle(title);
+
   const best =
-    results.find(
-      (album) =>
-        album.attributes.artistName.toLowerCase() === artist.toLowerCase(),
-    ) ?? results[0];
+    sameArtist.find(
+      (album) => normalizeAlbumTitle(album.attributes.name) === normalizedTitle,
+    ) ??
+    sameArtist[0] ??
+    results[0];
 
   return normalize(best);
 }
