@@ -5,12 +5,12 @@ import { usePathname, useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
 const LINKS = [
-  { href: "/", label: "Dashboard" },
+  { href: "/", label: "Home" },
   { href: "/lists", label: "Lists" },
   { href: "/diary", label: "Diary" },
 ];
 
-// Shared nav for moving between Dashboard / Lists / Diary / sign-out.
+// Shared nav for moving between Home / Lists / Diary / sign-out.
 // Bottom tab bar on mobile (thumb reach on iPhone/iPad), top bar on desktop.
 export function SiteNav() {
   const pathname = usePathname();

@@ -10,6 +10,7 @@ type MediaListItemProps = {
   listId: string;
   userId: string | null;
   existingEntry: DiaryEntry | null;
+  onLogged?: (entry: DiaryEntry) => void;
 };
 
 // One item within a list detail page: artwork/card, logged state, and (for
@@ -19,6 +20,7 @@ export function MediaListItem({
   listId,
   userId,
   existingEntry,
+  onLogged,
 }: MediaListItemProps) {
   const [open, setOpen] = useState(false);
   const [entry, setEntry] = useState(existingEntry);
@@ -52,6 +54,7 @@ export function MediaListItem({
           onLogged={(logged) => {
             setEntry(logged);
             setOpen(false);
+            onLogged?.(logged);
           }}
           onCancel={() => setOpen(false)}
         />
